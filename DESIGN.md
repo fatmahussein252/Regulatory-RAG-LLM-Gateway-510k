@@ -62,13 +62,13 @@ Abstracts interaction with external large language models via OpenRouter. It enc
 
 **Responsibilities:**
 - Initialize the configured LLM model via OpenRouter.
-**Model Configuration:**
+- **Model Configuration:**
     - Configurable model_name (default model: stepfun/step-3.5-flash:free)
     - Low temperature (0.2) for deterministic outputs
     - Timeout and retry handling
     - API Key loaded from environment settings
 - Construct a strict system prompt for grounded extraction.
-**Prompt Design:**
+- **Prompt Design:**
 The system prompt enforces:
     - JSON-only output
     - No explanations or markdown
