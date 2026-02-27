@@ -21,8 +21,8 @@ $ conda activate regulatory-rag
 ## Installation
 ### Clone the project
 ```bash
-$ git clone git@github.com:fatmahussein252/Regulatory-RAG-LLM-Gateway-510-k-.git
-$ cd Regulatory-RAG-LLM-Gateway-510-k-/
+$ git clone git@github.com:fatmahussein252/Regulatory-RAG-LLM-Gateway-510k.git
+$ cd Regulatory-RAG-LLM-Gateway-510k/
 ```
 ### Install the required packages
 
