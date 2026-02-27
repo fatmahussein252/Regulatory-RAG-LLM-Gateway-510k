@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.extract import ExtractRequest
 from controllers import BaseController
-from processing import Embedding
+from embedding import Embedding
 from retriever import Retriever
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings

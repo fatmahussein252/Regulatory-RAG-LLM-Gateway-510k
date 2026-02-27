@@ -1,6 +1,5 @@
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from .chunk_enum import ChunkEnum
 
 class Chunker:
     """

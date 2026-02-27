@@ -3,7 +3,8 @@ from fastapi.responses import JSONResponse
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.process_docs import EmbeddingRequest
 from controllers import BaseController
-from processing import ChunkEnum, Chunker, TextExtractor, Embedding
+from processing import ChunkEnum, Chunker, TextExtractor
+from embedding import Embedding
 from config import Settings, get_settings
 import os
 import json

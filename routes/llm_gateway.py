@@ -2,7 +2,7 @@ from fastapi import FastAPI, APIRouter, Depends, status, Request
 from fastapi.responses import JSONResponse
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.llm_gateway import LLMGatewayRequest
-from processing import Embedding
+from embedding import Embedding
 from retriever import Retriever
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings

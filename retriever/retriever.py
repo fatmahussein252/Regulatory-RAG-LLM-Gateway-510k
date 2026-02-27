@@ -1,5 +1,5 @@
 from langchain_chroma.vectorstores import Chroma
-from processing import Embedding
+from embedding import Embedding
 from config import get_settings
 
 

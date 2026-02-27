@@ -1,7 +1,7 @@
 from fastapi import FastAPI, APIRouter, Depends, status, Request
 from fastapi.responses import JSONResponse
 import os
-from processing import Embedding
+from embedding import Embedding
 from retriever import Retriever
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.retrieve import ProcessRequest
@@ -55,11 +55,12 @@ async def retrieve_docs(process_request: ProcessRequest, app_settings : Settings
                 "signal": ResponseSignal.RETRIEVAL_FAILURE.value
             }
         )
-    else:
-        return JSONResponse(
-            content={
-                "retrieved_documents": retrieved_documents
-            }
-        )
+
+    return JSONResponse(
+        content={
+            "retrieved_documents": retrieved_documents
+        }
+    )
+    
     
     
