@@ -23,15 +23,8 @@ async def llm_gateway(llm_gateway_request: LLMGatewayRequest, app_settings : Set
     
     metadata_filter = {"k_number": llm_gateway_request.k_number} if llm_gateway_request.k_number else None
     
-    if os.path.exists(app_settings.DATABASE_DIR):
-        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
-        return JSONResponse(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            content={
-                "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
-            }
-        )
-    if os.path.exists(app_settings.DATABASE_DIR):
+  
+    if not os.path.exists(app_settings.DATABASE_DIR):
         logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
         return JSONResponse(
             status_code=status.HTTP_400_BAD_REQUEST,

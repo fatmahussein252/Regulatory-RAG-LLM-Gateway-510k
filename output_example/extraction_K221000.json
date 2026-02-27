@@ -1,0 +1,112 @@
+{
+    "k_number": {
+        "value": "K221000",
+        "evidence": [
+            {
+                "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+                "snippet": "510(k) Number (ifk nown)\n\n K221000"
+            }
+        ]
+    },
+    "device_name": {
+        "value": "ON3D",
+        "evidence": [
+            {
+                "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+                "snippet": "Device Name\n ON3D"
+            }
+        ]
+    },
+    "applicant": {
+        "value": null,
+        "evidence": []
+    },
+    "regulation_number": {
+        "value": "21 CFR Part 807.97, 21 CFR Part 803, 21 CFR Part 807, 21 CFR Part 801, 21 CFR 803, 21 CFR 4, Subpart B, 21 CFR Part 820, 21 CFR 4, Subpart A, 21 CFR 1000-1050, 21 CFR 801 Subpart D, 21 CFR 801 Subpart C",
+        "evidence": [
+            {
+                "chunk_id": "81b83bec-67fb-4f9a-ae7f-e210b397f55a",
+                "snippet": "Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part 807.97). For questions regarding the reporting of adverse events under the MDR regulation (21 CFR Part 803), please go to"
+            },
+            {
+                "chunk_id": "8a4c10b3-210f-41c4-a755-d425c0c0f0c3",
+                "snippet": "requirements, including, but not limited to: registration and listing (21 CFR Part 807); labeling (21 CFR Part 801); medical device reporting (reporting of medical device-related adverse events) (21 CFR 803) for devices or postmarketing safety reporting (21 CFR 4, Subpart B) for combination products (see https://www.fda.gov/combination-products/guidance-regulatory-information/postmarketing-safety-reporting-combination-products); good manufacturing practice requirements as set forth in the quality systems (QS) regulation (21 CFR Part 820) for devices or current good manufacturing practices (21 CFR 4, Subpart A) for combination products; and, if applicable, the electronic product radiation control provisions (Sections 531-542 of the Act); 21 CFR 1000-1050.\n\n Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part 807.97)."
+            },
+            {
+                "chunk_id": "2ec2b159-bbb8-48b2-bad0-d55329d1e043",
+                "snippet": "Type of Use (Select one or both, as applicable)\n X Prescription Use (Part 21 CFR 801 Subpart D) E Over-The-Counter Use (21 CFR 801 Subpart C)"
+            }
+        ]
+    },
+    "product_code": {
+        "value": "LLZ",
+        "evidence": [
+            {
+                "chunk_id": "72835993-fc05-4ef2-9fe3-28f9482a5928",
+                "snippet": "Product Code: LLZ"
+            }
+        ]
+    },
+    "intended_use": {
+        "value": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.",
+        "evidence": [
+            {
+                "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+                "snippet": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners."
+            },
+            {
+                "chunk_id": "607bc0e0-35dd-4c16-86d7-ea1581759933",
+                "snippet": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners."
+            }
+        ]
+    },
+    "indications_for_use": {
+        "value": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.",
+        "evidence": [
+            {
+                "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+                "snippet": "Indications for Use (Describe)\n ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient\n images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and\n treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners."
+            }
+        ]
+    },
+    "predicate_devices": {
+        "value": "Dolphin Imaging (K110430)",
+        "evidence": [
+            {
+                "chunk_id": "b7c72da2-ca30-4c11-8cc4-d5db26a1d789",
+                "snippet": "ON3D is substantially equivalent to the predicate devices, Dolphin Imaging (K110430)."
+            }
+        ]
+    },
+    "technology_description": {
+        "value": "Medical image management and processing system",
+        "evidence": [
+            {
+                "chunk_id": "1a3a7f24-a770-4d4e-858a-67dfdccc566c",
+                "snippet": "Regulation Name: Medical image management and processing system"
+            }
+        ]
+    },
+    "testing_summary": {
+        "value": "the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed, recommended, or suggested in the labeling of the device.",
+        "evidence": [
+            {
+                "chunk_id": "cf6a7945-ec0e-4450-96ab-d858fc6a3cd3",
+                "snippet": "the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed, recommended, or suggested in the labeling of the device."
+            }
+        ]
+    },
+    "substantial_equivalence_rationale": {
+        "value": "Therefore, we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device.",
+        "evidence": [
+            {
+                "chunk_id": "3afd3148-1eca-4c87-8e3f-765dac863caa",
+                "snippet": "Therefore, we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device."
+            },
+            {
+                "chunk_id": "b7c72da2-ca30-4c11-8cc4-d5db26a1d789",
+                "snippet": "7. Substantial Equivalence\n\n ON3D is substantially equivalent to the predicate devices, Dolphin Imaging (K110430). The\n following comparison table is presented to demonstrate substantial equivalence.\n\n - Subject Device Predicate Device Remarks\n 510(k) Number K221000 K110430 -\n\n Trade/Device Name ON3D Dolphin Imaging -\n Manufacturer 3D ONS, Inc. Patterson Dental Supply, Inc.\n (doing business as Dolphin -\n Imaging & Management)\n Regulation Number 21 CFR 892.2050 21 CFR 892.2050 Same\n Regulatory Class Class II Class II Same\n Product Code LLZ LLZ Same"
+            }
+        ]
+    }
+}

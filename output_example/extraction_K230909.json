@@ -1,0 +1,102 @@
+{
+    "k_number": {
+        "value": "K230909",
+        "evidence": [
+            {
+                "chunk_id": "42c9e3f2-78ba-4f87-8922-f7a1dcfd8f45",
+                "snippet": "K230909\n Page 4 of 9"
+            },
+            {
+                "chunk_id": "ef4a466a-f4de-4e40-a9d2-c19e849ff2f4",
+                "snippet": "K230909\n Page 5 of 9"
+            },
+            {
+                "chunk_id": "40cbc37f-2a37-44b8-93e7-10ab7737041c",
+                "snippet": "K230909\n Page 3 of 9"
+            },
+            {
+                "chunk_id": "94002f5a-602b-437f-bd56-a33ac8cf8699",
+                "snippet": "K230909\n Page 8 of 9"
+            }
+        ]
+    },
+    "device_name": {
+        "value": "EchoTip\u00ae AcuCore\u2122 Ultrasound Biopsy Needle (ECHO-BX-3-22)",
+        "evidence": [
+            {
+                "chunk_id": "e660ff87-7ec3-417a-bdad-a0e4692d2b7a",
+                "snippet": "The EchoTip\u00ae AcuCore\u2122 Ultrasound Biopsy Needle (ECHO-BX-3-22) is an endoscopic ultrasound needle"
+            },
+            {
+                "chunk_id": "7acf00a8-2261-4b3b-8ba8-bda84f05d38a",
+                "snippet": "Trade/Device Name: EchoTip\u00ae AcuCore\u2122 Ultrasound Biopsy Needle (ECHO-BX-3-22)"
+            }
+        ]
+    },
+    "applicant": {
+        "value": null,
+        "evidence": []
+    },
+    "regulation_number": {
+        "value": "21 CFR Part 807.97",
+        "evidence": [
+            {
+                "chunk_id": "4ed8fe7e-76d5-41a7-a47f-c61e92fc07e0",
+                "snippet": "Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part 807.97)."
+            }
+        ]
+    },
+    "product_code": {
+        "value": "FCG, ODG",
+        "evidence": [
+            {
+                "chunk_id": "8adea8a8-e605-43a3-87ae-d93d6e4fb953",
+                "snippet": "Product Code: FCG, ODG"
+            }
+        ]
+    },
+    "intended_use": {
+        "value": "This device is used with an ultrasound endoscope for fine needle biopsy (FNB), of submucosal and extramural lesions, mediastinal masses, lymph nodes and intraperitoneal masses within or adjacent to the GI tract.",
+        "evidence": [
+            {
+                "chunk_id": "fbf0a9da-40bb-4247-a90b-5d2b31b928fe",
+                "snippet": "This device is used with an ultrasound endoscope for fine needle biopsy (FNB), of submucosal and\n extramural lesions, mediastinal masses, lymph nodes and intraperitoneal masses within or adjacent\n to the GI tract."
+            }
+        ]
+    },
+    "indications_for_use": {
+        "value": "This device is used with an ultrasound endoscope for fine needle biopsy (FNB), of submucosal and extramural lesions, mediastinal masses, lymph nodes and intraperitoneal masses within or adjacent to the GI tract.",
+        "evidence": [
+            {
+                "chunk_id": "fbf0a9da-40bb-4247-a90b-5d2b31b928fe",
+                "snippet": "Indications for Use (Describe)\n This device is used with an ultrasound endoscope for fine needle biopsy (FNB), of submucosal and\n extramural lesions, mediastinal masses, lymph nodes and intraperitoneal masses within or adjacent\n to the GI tract."
+            }
+        ]
+    },
+    "predicate_devices": {
+        "value": "EchoTip ProCore\u00ae HD Ultrasound Biopsy Needle",
+        "evidence": [
+            {
+                "chunk_id": "9aff24a8-98bc-4eda-9cd5-ef3cc182f9d5",
+                "snippet": "the predicate EchoTip ProCore\u00ae HD Ultrasound Biopsy Needle"
+            }
+        ]
+    },
+    "technology_description": {
+        "value": null,
+        "evidence": []
+    },
+    "testing_summary": {
+        "value": "Non-Clinical and/or Clinical Tests Summary & Conclusions\nThe following non-clinical testing was performed on the subject device to support this\nsubmission.\n- Needle Crumpling Compression test intended to challenge the ability of the ECHO family of\nEndoscopic Ultrasound needles to withstand handle angulation. All test articles met the\nacceptance criteria.\n- Suction Test intended to assess the ability of the performance of the device to meet the\nrequirement to perform suction at endoscopic ultrasound needle device based on the suction\npressure created by the syringe. All test articles met the acceptance criteria.\n\n- Needle Puncture Test intended to evaluate the comparative performance and function of\nEndoscopic ultrasound needles in terms of puncture force. All test articles met the acceptance\ncriteria.",
+        "evidence": [
+            {
+                "chunk_id": "7248dbe9-4d4e-4ba6-8acb-e71898280fc6",
+                "snippet": "Non-Clinical and/or Clinical Tests Summary & Conclusions\nThe following non-clinical testing was performed on the subject device to support this\nsubmission.\n- Needle Crumpling Compression test intended to challenge the ability of the ECHO family of\nEndoscopic Ultrasound needles to withstand handle angulation. All test articles met the\nacceptance criteria.\n- Suction Test intended to assess the ability of the performance of the device to meet the\nrequirement to perform suction at endoscopic ultrasound needle device based on the suction\npressure created by the syringe. All test articles met the acceptance criteria.\n\n- Needle Puncture Test intended to evaluate the comparative performance and function of\nEndoscopic ultrasound needles in terms of puncture force. All test articles met the acceptance\ncriteria."
+            }
+        ]
+    },
+    "substantial_equivalence_rationale": {
+        "value": null,
+        "evidence": []
+    }
+}

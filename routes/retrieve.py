@@ -23,7 +23,7 @@ async def retrieve_docs(process_request: ProcessRequest, app_settings : Settings
    
     top_k = process_request.top_k 
 
-    if os.path.exists(app_settings.DATABASE_DIR):
+    if not os.path.exists(app_settings.DATABASE_DIR):
         logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
         return JSONResponse(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -44,6 +44,7 @@ async def retrieve_docs(process_request: ProcessRequest, app_settings : Settings
     for i, (doc, score) in enumerate(retrieved_docs_and_scores):
         retrieved_documents.append({
             "chunk_number": i + 1,
+            "chunk_id": doc.id,
             "score": score,
             "content": doc.page_content,
             "metadata": doc.metadata

@@ -24,6 +24,8 @@ class OpenRouterProvider:
                 api_key=self.openrouter_api_key,
                 model=self.llm_model_name,
                 temperature=0.2,
+                timeout=60,       
+                max_retries=3,     
             )
     def _init_prompt_template(self):
         self.prompt = ChatPromptTemplate.from_messages([

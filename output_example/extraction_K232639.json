@@ -1,0 +1,86 @@
+{
+    "k_number": {
+        "value": null,
+        "evidence": []
+    },
+    "device_name": {
+        "value": null,
+        "evidence": []
+    },
+    "applicant": {
+        "value": "Juliane Rie\u00df",
+        "evidence": [
+            {
+                "chunk_id": "e94f46be-fc6c-432f-8fbe-1c56ea3a0e9c",
+                "snippet": "Dear Juliane Rie\u00df:\n\n We have reviewed your section 510(k) premarket notification"
+            }
+        ]
+    },
+    "regulation_number": {
+        "value": "21 CFR Part 820",
+        "evidence": [
+            {
+                "chunk_id": "288614d5-6b1d-4c1a-abc9-824e4e18d8d4",
+                "snippet": "good manufacturing practice requirements as set forth in the quality systems (QS) regulation (21 CFR Part 820) for devices or current good manufacturing practices (21 CFR Part 4, Subpart A) for combination products; and, if applicable, the electronic product radiation control provisions (Sections 531-542 of the Act); 21 CFR Parts 1000-1050."
+            }
+        ]
+    },
+    "product_code": {
+        "value": "OBP",
+        "evidence": [
+            {
+                "chunk_id": "e94f46be-fc6c-432f-8fbe-1c56ea3a0e9c",
+                "snippet": "Product Code: OBP"
+            }
+        ]
+    },
+    "intended_use": {
+        "value": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult patients who have failed to achieve satisfactory improvement from prior antidepressant medication in the current episode.",
+        "evidence": [
+            {
+                "chunk_id": "88bbd617-9ad8-4f5a-bb1f-0f12a2b71918",
+                "snippet": "Indications for Use (Describe)\n The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode."
+            }
+        ]
+    },
+    "indications_for_use": {
+        "value": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult patients who have failed to achieve satisfactory improvement from prior antidepressant medication in the current episode.",
+        "evidence": [
+            {
+                "chunk_id": "88bbd617-9ad8-4f5a-bb1f-0f12a2b71918",
+                "snippet": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode."
+            }
+        ]
+    },
+    "predicate_devices": {
+        "value": "HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313)",
+        "evidence": [
+            {
+                "chunk_id": "9f6b2942-eba9-41f1-bc1f-a6b2692b6ad6",
+                "snippet": "The Apollo TMS Therapy System is substantially equivalent to its predicate devices, the HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313)."
+            }
+        ]
+    },
+    "technology_description": {
+        "value": null,
+        "evidence": []
+    },
+    "testing_summary": {
+        "value": "Software verification and validation testing was conducted and documented in accordance with IEC 62304 and the documentation was provided as recommended by FDA\u2019s Guidance for Industry and FDA Staff, \u201cGuidance for the Content of Premarket Submissions for Software Contained in Medical Devices.\u201d",
+        "evidence": [
+            {
+                "chunk_id": "946cb9b7-b145-4fe7-8029-92653651b3e4",
+                "snippet": "Software verification and validation testing was conducted and documented in accordance with IEC 62304 and the documentation was provided as recommended by FDA\u2019s Guidance for Industry and FDA Staff, \u201cGuidance for the Content of Premarket Submissions for Software Contained in Medical Devices.\u201d"
+            }
+        ]
+    },
+    "substantial_equivalence_rationale": {
+        "value": "The Apollo TMS Therapy System is substantially equivalent to its predicate devices, the HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313). The intended use and indications for use for the Apollo TMS Therapy System and predicate devices are identical. The Apollo TMS Therapy System and the secondary predicate device have equivalent system components, consisting of a main unit (available in two variants 918001 Apollo and 918010 Apollo Light) including the stimulator, a stimulation coil, a coil positioning system, and the application software. The basic operational procedure is identical consisting of system setup, patient preparation, coil positioning, determination of patient\u2019s motor threshold, and administration of treatment at predefined treatment stimulation parameters.",
+        "evidence": [
+            {
+                "chunk_id": "9f6b2942-eba9-41f1-bc1f-a6b2692b6ad6",
+                "snippet": " The Apollo TMS Therapy System is substantially equivalent to its predicate devices, the HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313). The intended use and\n\n indications for use for the Apollo TMS Therapy System and predicate devices are identical.\n The Apollo TMS Therapy System and the secondary predicate device have equivalent system\n components, consisting of a main unit (available in two variants 918001 Apollo and 918010 Apollo\n\n Light) including the stimulator, a stimulation coil, a coil positioning system, and the application\n software. The basic operational procedure is identical consisting of system setup, patient preparation,\n coil positioning, determination of patient\u2019s motor threshold, and administration of treatment at\n predefined treatment stimulation parameters."
+            }
+        ]
+    }
+}
