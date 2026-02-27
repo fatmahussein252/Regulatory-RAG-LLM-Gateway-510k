@@ -1,0 +1,122 @@
+{
+    "k_number": {
+        "value": null,
+        "evidence": []
+    },
+    "device_name": {
+        "value": null,
+        "evidence": []
+    },
+    "applicant": {
+        "value": "Juliane Rie\u00df",
+        "evidence": [
+            {
+                "chunk_id": "3",
+                "snippet": "Dear Juliane Rie\u00df:\n\n We have reviewed your section 510(k) premarket notification"
+            }
+        ]
+    },
+    "regulation_number": {
+        "value": "21 CFR Part 820, 21 CFR Part 4, Subpart A, 21 CFR Parts 1000-1050, 21 CFR 807.97, 21 CFR Part 803, 21 CFR 801 Subpart D, 21 CFR 801 Subpart C",
+        "evidence": [
+            {
+                "chunk_id": "2",
+                "snippet": "quality systems (QS) regulation (21 CFR Part 820)"
+            },
+            {
+                "chunk_id": "2",
+                "snippet": "current good manufacturing practices (21 CFR Part 4, Subpart A)"
+            },
+            {
+                "chunk_id": "2",
+                "snippet": "21 CFR Parts 1000-1050"
+            },
+            {
+                "chunk_id": "2",
+                "snippet": "Misbranding by reference to premarket notification\" (21 CFR 807.97)"
+            },
+            {
+                "chunk_id": "2",
+                "snippet": "MDR regulation (21 CFR Part 803)"
+            },
+            {
+                "chunk_id": "3",
+                "snippet": "Misbranding by reference to premarket notification\" (21 CFR 807.97)"
+            },
+            {
+                "chunk_id": "3",
+                "snippet": "MDR regulation (21 CFR Part 803)"
+            },
+            {
+                "chunk_id": "5",
+                "snippet": "Part 21 CFR 801 Subpart D"
+            },
+            {
+                "chunk_id": "5",
+                "snippet": "21 CFR 801 Subpart C"
+            }
+        ]
+    },
+    "product_code": {
+        "value": "OBP",
+        "evidence": [
+            {
+                "chunk_id": "1",
+                "snippet": "Product Code: OBP"
+            }
+        ]
+    },
+    "intended_use": {
+        "value": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode.",
+        "evidence": [
+            {
+                "chunk_id": "3",
+                "snippet": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode."
+            }
+        ]
+    },
+    "indications_for_use": {
+        "value": "The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode.",
+        "evidence": [
+            {
+                "chunk_id": "2",
+                "snippet": "Indications for Use (Describe)\n The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode."
+            }
+        ]
+    },
+    "predicate_devices": {
+        "value": "HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313)",
+        "evidence": [
+            {
+                "chunk_id": "Chunk 2",
+                "snippet": "The Apollo TMS Therapy System is substantially equivalent to its predicate devices, the HORIZON\u00ae TMS Therapy System (K182853) and Apollo TMS Therapy System (K180313)."
+            }
+        ]
+    },
+    "technology_description": {
+        "value": null,
+        "evidence": []
+    },
+    "testing_summary": {
+        "value": "Software verification and validation testing was conducted in accordance with IEC 62304 and FDA guidance. Risk assessment was applied in accordance with ISO 14971 and IEC 62304.",
+        "evidence": [
+            {
+                "chunk_id": "1",
+                "snippet": "Software verification and validation testing was conducted and documented in accordance with IEC 62304 and the documentation was provided as recommended by FDA\u2019s Guidance for Industry and FDA Staff, \u201cGuidance for the Content of Premarket Submissions for Software Contained in Medical Devices.\u201d"
+            },
+            {
+                "chunk_id": "5",
+                "snippet": "Risk assessment is applied throughout the product development lifecycle process in accordance with the requirements set forth under the Agency recognized consensus standards ISO 14971 and IEC 62304."
+            }
+        ]
+    },
+    "substantial_equivalence_rationale": {
+        "value": "The intended use and indications for use are identical, system components are equivalent, and the basic operational procedure is identical.",
+        "evidence": [
+            {
+                "chunk_id": "2",
+                "snippet": "The intended use and indications for use for the Apollo TMS Therapy System and predicate devices are identical. The Apollo TMS Therapy System and the secondary predicate device have equivalent system components, consisting of a main unit (available in two variants 918001 Apollo and 918010 Apollo Light) including the stimulator, a stimulation coil, a coil positioning system, and the application software. The basic operational procedure is identical consisting of system setup, patient preparation, coil positioning, determination of patient\u2019s motor threshold, and administration of treatment at predefined treatment stimulation parameters."
+            }
+        ]
+    }
+}
