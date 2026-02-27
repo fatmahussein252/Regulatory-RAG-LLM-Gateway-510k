@@ -42,7 +42,7 @@ Applies a page-aware recursive character chunking strategy using `RecursiveChara
 Converts text chunks into embeddings and stores them in a persistent vector database.
 
 **Responsibilities:**
-- Generate embeddings using configured embedding model
+- Generate embeddings using configured embedding model, used model: sentence-transformers/all-mpnet-base-v2 with vector dimension of 768.
 - Store embeddings in vector store (e.g., ChromaDB)
 - Persist index under `vectorDB/`
 
@@ -77,6 +77,13 @@ The system prompt enforces:
     - Mandatory citation grounding using chunk_id and exact snippets
 - Enforce structured JSON output using langchain `JsonOutputParser`.
 - Return a chain of prompt template, llm and output parser to invoke.
+
+## Tradeoffs and Limitations 
+The Retrieval needs enhancments. The structured output shows that as there are null fields.
+
+This can be solved by:
+- Using embedding model with higher vector dimension to represent text more accurately, but it will take more time for model download and initialization.
+- Using hybrid search: classical word-based search + vector search
 
 
 
