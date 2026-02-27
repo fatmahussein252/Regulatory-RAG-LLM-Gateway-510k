@@ -8,5 +8,6 @@ class ResponseSignal(Enum):
     CHUNKING_FAILURE = "failed_to_chunk_text"
     CHUNKING_SUCCEEDED = "text_chunked_successfully"
     VECTORDB_STORAGE_SUCCESS = "vectordb_stored_successfully"
+    DATABASE_LOADING_FAILURE = "failed_to_load_database"
     RETRIEVAL_FAILURE = "failed_to_retrieve_relevant_documents"
     INVALID_K_NUMBER = "invalid_k_number"

@@ -9,6 +9,9 @@ import os
 import json
 import logging
 import shutil
+from config.logging_config import get_logger
+
+logger = get_logger(__name__)
 
 embed_docs_router = APIRouter(
     tags=["regulatory-rag-api-v1"]
@@ -17,8 +20,6 @@ embed_docs_router = APIRouter(
 @embed_docs_router.post("/embed_docs")
 async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings =Depends(get_settings)): 
     
-    logger = logging.getLogger(__name__)
-
     chunk_size = embdding_request.chunk_size if embdding_request.chunk_size else ChunkEnum.CHUNK_SIZE.value
     chunk_overlap = embdding_request.chunk_overlap_size if embdding_request.chunk_overlap_size else ChunkEnum.CHUNK_OVERLAP_SIZE.value
 

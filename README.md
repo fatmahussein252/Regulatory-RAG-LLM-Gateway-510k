@@ -85,6 +85,7 @@ Schema:
 `llm_gateway` enpoint:
 - Retrieves relevant documents 
 - Sends query and context to the llm for output extraction.
+- Returns extracted output
 
 Schema: 
 ```json
@@ -97,7 +98,7 @@ Schema:
  ## Extraction
 `extract` endpoint:
 - Generates a structured, citation-grounded JSON output saved at: Output/extraction_<k_number>.json
-- Returns output path and extracted JSON output.
+- Returns extracted JSON output.
 
 Schema: 
 ```json

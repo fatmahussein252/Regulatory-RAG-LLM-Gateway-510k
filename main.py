@@ -1,12 +1,8 @@
 from fastapi import FastAPI, APIRouter
 from routes import base, ingest, retrieve, process_docs, embed_docs, llm_gateway, extract
-import logging
+from config.logging_config import setup_logging
 
-logging.basicConfig(
-    level=logging.INFO,  
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-
+setup_logging()
 app = FastAPI()
 
 app.include_router(base.base_router)

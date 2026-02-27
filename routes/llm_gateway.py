@@ -7,6 +7,10 @@ from retriever import Retriever
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings
 import os
+from config.logging_config import get_logger
+
+logger = get_logger(__name__)
+
 
 llm_gateway_router = APIRouter(
     tags=["regulatory-rag-api-v1"]
@@ -19,6 +23,14 @@ async def llm_gateway(llm_gateway_request: LLMGatewayRequest, app_settings : Set
     
     metadata_filter = {"k_number": llm_gateway_request.k_number} if llm_gateway_request.k_number else None
     
+    if os.path.exists(app_settings.DATABASE_DIR):
+        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
+        return JSONResponse(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            content={
+                "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
+            }
+        )
     retriever = Retriever(app_settings.DATABASE_DIR)
 
     embedding = Embedding()

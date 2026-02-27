@@ -9,7 +9,9 @@ from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings
 import os
 import json
-import logging
+from config.logging_config import get_logger
+
+logger = get_logger(__name__)
 
 extraction_router = APIRouter(
     tags=["regulatory-rag-api-v1"]
@@ -65,15 +67,13 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
         with open(output_path, "w") as f:
             json.dump(full_extraction, f, indent=4)
         
-        return JSONResponse(
-            {"json_output_path": f"json_output_stored_at_{output_path}",
-             "full_extraction": full_extraction}
-
-        )
-
-
     except Exception as e:
-        logging.logger.error(f"Error writing output file: {e}")
-        return None
+        logger.error(f"Error writing output file: {e}")
+    
+    return JSONResponse(
+            content={"full_extraction": full_extraction}   
+            )
+    
+        
         
 
