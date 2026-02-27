@@ -27,7 +27,7 @@ $ cd Regulatory-RAG-LLM-Gateway-510k/src
 ### Install the required packages
 
 ```bash
-$ pip install -r requirements.txt
+$ pip install -r ../requirements.txt
 ```
 
 ### Setup the environment variables
