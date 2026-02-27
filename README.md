@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
 $ cp .env.example .env
 ```
 1) Get an OpenRouter API key from [here](https://openrouter.ai/)
-2) Set your environment variables in the `.env` file. Like `OPENROUTER_API_KEY` value.
+2) Set your `OPENROUTER_API_KEY` environment variable value in the `.env` file.
 
 ## Run the FastAPI Server
 ```bash
