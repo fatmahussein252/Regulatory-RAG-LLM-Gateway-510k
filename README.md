@@ -1,9 +1,9 @@
-# Regulatory-RAG-LLM-Gateway-510-k-
+# FDA 510(k) Regulatory RAG & LLM Gateway
 A mini end-to-end system that ingests FDA 510(k) documents, builds a RAG index, and uses an LLM Gateway to extract regulatory facts into a structured JSON output grounded by citations.
 
 ## Requirements
 
-- Python 3.13 (python 3.14 cuases compatibility issue with chromadb) 
+- Python 3.13 (Python 3.14 causes compatibility issues with ChromaDB) 
 
 #### Install Python using MiniConda
 
@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 ```bash
 $ cp .env.example .env
 ```
-1) Get an OpenRouter API from [here] (https://openrouter.ai/)
+1) Get an OpenRouter API key from [here](https://openrouter.ai/)
 2) Set your environment variables in the `.env` file. Like `OPENROUTER_API_KEY` value.
 
 ## Run the FastAPI Server
@@ -47,20 +47,20 @@ Go to the FastAPI-Swagger UI [here](http://0.0.0.0:5000/docs)
 
 ## Ingestion
 `ingest` endpoint: 
-- Download pdf files and store them at Assets/k_pdf_files directory.
-- Extract files metadata and store at Assets/files_metadata.json
-- Response with dowloaded files metadata.
+- Downloads pdf files and stores them at Assets/k_pdf_files directory.
+- Extracts files metadata and stores at Assets/files_metadata.json
+- Returns metadata of the downloaded files.
 
 ## Documents Processing
-`process_docs` enpoint:
+`process_docs` endpoint:
 - Extracts text from PDFs 
-- Clean text (e.g. remove multiple blank lines and excessive internal spacing)
-- Store text files at Assets/k_txt_files
+- Cleans text (e.g. removes multiple blank lines and excessive internal spacing)
+- Stores text files at Assets/k_txt_files
 
 ## Chunking, Embedding and Vectorstore
-`embed_docs` enpoint:
-- Chunk text pages with metadata 
-- Generate embeddings vectorstore at vectorDB directory
+`embed_docs` endpoint:
+- Chunks text pages with metadata 
+- Generates embeddings and stores them in a persistent vector database under the vectorDB/    directory.
 
 Schema: 
 ```json
@@ -71,7 +71,7 @@ Schema:
 ```
 
 ## Retrieval
-`retrieve` enpoint retrieves the top_k relevant documents to the query using k_number filter.
+`retrieve` endpoint retrieves the top_k relevant documents to the query using k_number filter.
 
 Schema: 
 ```json
@@ -83,8 +83,8 @@ Schema:
 ```
 ## LLM Gateway
 `llm_gateway` enpoint:
-- Retrieve relevant documents 
-- Send query and context to the llm for output extraction.
+- Retrieves relevant documents 
+- Sends query and context to the llm for output extraction.
 
 Schema: 
 ```json
@@ -96,14 +96,30 @@ Schema:
 ```
  ## Extraction
 `extract` endpoint:
-- Generate the json output files at Output/extraction_<k_number>.json.
-- Response with output path and extracted schema.
+- Generates a structured, citation-grounded JSON output saved at: Output/extraction_<k_number>.json
+- Returns output path and extracted JSON output.
 
 Schema: 
 ```json
 {
   "k_number": "string",
   "model_name": "string"  # defaults to "stepfun/step-3.5-flash:free"
+}
+```
+
+## Example Output
+
+```json
+{
+    "k_number": {
+        "value": "K221000",
+        "evidence": [
+            {
+                "chunk_id": "1",
+                "snippet": "510(k) Number (ifk nown)\n\n K221000"
+            }
+        ]
+    }
 }
 ```
 
