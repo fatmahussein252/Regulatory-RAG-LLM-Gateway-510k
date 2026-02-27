@@ -1,0 +1,60 @@
+{ 
+  "query": "applicant",
+  "retrieved_documents": [
+    {
+      "chunk_number": 1,
+      "chunk_id": "466a5f64-64c4-4744-b79b-8282e09a3d2e",
+      "score": 1.5815521478652954,
+      "content": "Type of Use (Select one or both, as applicable)\n ZPrescription\n Use (Part 21 CFR 801 Subpart D) FOver-The-Counter Use (21 CFR 801 Subpart C)\n\n CONTINUE ON A SEPARATE PAGE IF NEEDED.\n This section applies only to requirements of the Paperwork Reduction Act of 1995.\n *DO NOT SEND YOUR COMPLETED FORM TO THE PRA STAFF EMAIL ADDRESS BELOW.*\n The burden time for this collection of information is estimated to average 79 hours per response, including the\n time to review instructions, search existing data sources, gather and maintain the data needed and complete\n and review the collection of information. Send comments regarding this burden estimate or any other aspect\n of this information collection, including suggestions for reducing this burden, to:\n Department of Health and Human Services\n Food and Drug Administration\n Office of Chief Information Officer\n Paperwork Reduction Act (PRA) Staff\n PRAStaff@fda.hhs.gov\n \"An agency may not conduct or sponsor, and a person is not required to respond to, a collection of\n information unless it displays a currently valid OMB number.\"",
+      "metadata": {
+        "page_number": 3,
+        "k_number": "K232639",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf"
+      }
+    },
+    {
+      "chunk_number": 2,
+      "chunk_id": "2ee53fdd-1b82-4cf3-9076-4845ed75c75f",
+      "score": 1.6660070419311523,
+      "content": "in terms of iTBS treatment.\n\n 510(k) Summary Page 3 of 9",
+      "metadata": {
+        "page_number": 6,
+        "k_number": "K232639",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf"
+      }
+    },
+    {
+      "chunk_number": 3,
+      "chunk_id": "e94f46be-fc6c-432f-8fbe-1c56ea3a0e9c",
+      "score": 1.6994380950927734,
+      "content": "Product Code: OBP\n Dated: April 30, 2024\n Received: April 30, 2024\n\n Dear Juliane Rieß:\n\n We have reviewed your section 510(k) premarket notification of intent to market the device referenced above\n and have determined the device is substantially equivalent (for the indications for use stated in the enclosure)\n to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, the enactment\n date of the Medical Device Amendments, or to devices that have been reclassified in accordance with the\n provisions of the Federal Food, Drug, and Cosmetic Act (the Act) that do not require approval of a premarket\n approval application (PMA). You may, therefore, market the device, subject to the general controls\n provisions of the Act. Although this letter refers to your product as a device, please be aware that some\n cleared products may instead be combination products. The 510(k) Premarket Notification Database\n available at https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm identifies combination\n product submissions. The general controls provisions of the Act include requirements for annual registration,",
+      "metadata": {
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "k_number": "K232639",
+        "page_number": 1
+      }
+    },
+    {
+      "chunk_number": 4,
+      "chunk_id": "6d89809e-ef85-4c45-99a6-39b2ee302a02",
+      "score": 1.7651395797729492,
+      "content": "assistance/contact-us-division-industry-and-consumer-education-dice) for more information or contact DICE\n by email (DICE@fda.hhs.gov) or phone (1-800-638-2041 or 301-796-7100).\n\n Sincerely,\n Pamela D. Scott -S\n\n Pamela Scott, MS\n Assistant Director\n DHT5B: Division of Neuromodulation\n and Rehabilitation Devices\n OHT5: Office of Neurological\n and Physical Medicine Devices\n Office of Product Evaluation and Quality\n Center for Devices and Radiological Health\n\n Enclosure",
+      "metadata": {
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "page_number": 2,
+        "k_number": "K232639"
+      }
+    },
+    {
+      "chunk_number": 5,
+      "chunk_id": "a93b27cf-5fad-4589-aa16-993636ddc70b",
+      "score": 1.8172905445098877,
+      "content": "satisfactory improvement from satisfactory improvement from prior satisfactory improvement from prior\n prior antidepressant medication in antidepressant medication in the antidepressant medication in the\n the current episode. current episode. current episode.\n\n Product Code OBP OBP OBP\n Classification 21 CFR 882.5805 21 CFR 882.5805 21 CFR 882.5805\n\n Standard Treatment Stimulation Parameters\n\n Area of brain to be Left DLPFC Left DLPFC Left DLPFC\n stimulated\n\n Stimulation 120% of MT 120% of MT 120% of MT\n intensity\n\n %MT range 50% to 150% MT 0% to 200% MT 50% to 150% MT\n\n 510(k) Summary Page 5 of 9",
+      "metadata": {
+        "page_number": 8,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "k_number": "K232639"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{ 
+  "query": "Device Name",
+  "retrieved_documents": [
+    {
+      "chunk_number": 1,
+      "chunk_id": "72835993-fc05-4ef2-9fe3-28f9482a5928",
+      "score": 1.407766580581665,
+      "content": "Regulatory Class: Class II\n Product Code: LLZ\n Dated: March 30, 2022\n Received: April 4, 2022\n\n Dear DongHa Lee:\n\n We have reviewed your Section 510(k) premarket notification of intent to market the device referenced\n above and have determined the device is substantially equivalent (for the indications for use stated in the\n enclosure) to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, the\n enactment date of the Medical Device Amendments, or to devices that have been reclassified in accordance\n with the provisions of the Federal Food, Drug, and Cosmetic Act (Act) that do not require approval of a\n premarket approval application (PMA). You may, therefore, market the device, subject to the general\n controls provisions of the Act. Although this letter refers to your product as a device, please be aware that\n some cleared products may instead be combination products. The 510(k) Premarket Notification Database\n located at https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm identifies combination",
+      "metadata": {
+        "k_number": "K221000",
+        "page_number": 1,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf"
+      }
+    },
+    {
+      "chunk_number": 2,
+      "chunk_id": "c20df762-60e6-4a7a-bacd-b0b54f8b7d61",
+      "score": 1.407928705215454,
+      "content": "product submissions. The general controls provisions of the Act include requirements for annual registration,\n listing of devices, good manufacturing practice, labeling, and prohibitions against misbranding and\n adulteration. Please note: CDRH does not evaluate information related to contract liability warranties. We\n remind you, however, that device labeling must be truthful and not misleading.\n\n If your device is classified (see above) into either class II (Special Controls) or class III (PMA), it may be\n subject to additional controls. Existing major regulations affecting your device can be found in the Code of\n Federal Regulations, Title 21, Parts 800 to 898. In addition, FDA may publish further announcements\n concerning your device in the Federal Register.\n\n Please be advised that FDA's issuance of a substantial equivalence determination does not mean that FDA\n has made a determination that your device complies with other requirements of the Act or any Federal\n statutes and regulations administered by other Federal agencies. You must comply with all the Act's",
+      "metadata": {
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf",
+        "page_number": 1,
+        "k_number": "K221000"
+      }
+    },
+    {
+      "chunk_number": 3,
+      "chunk_id": "b7c72da2-ca30-4c11-8cc4-d5db26a1d789",
+      "score": 1.4249062538146973,
+      "content": "7. Substantial Equivalence\n\n ON3D is substantially equivalent to the predicate devices, Dolphin Imaging (K110430). The\n following comparison table is presented to demonstrate substantial equivalence.\n\n - Subject Device Predicate Device Remarks\n 510(k) Number K221000 K110430 -\n\n Trade/Device Name ON3D Dolphin Imaging -\n Manufacturer 3D ONS, Inc. Patterson Dental Supply, Inc.\n (doing business as Dolphin -\n Imaging & Management)\n Regulation Number 21 CFR 892.2050 21 CFR 892.2050 Same\n Regulatory Class Class II Class II Same\n Product Code LLZ LLZ Same",
+      "metadata": {
+        "k_number": "K221000",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf",
+        "page_number": 5
+      }
+    },
+    {
+      "chunk_number": 4,
+      "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+      "score": 1.4304965734481812,
+      "content": "DEPARTMENT OF HEALTH AND HUMAN SERVICES Form Approved: OMB No. 0910-0120\n Food and Drug Administration\n Expiration Date: 06/30/2023\n Indications for Use See PRA Statementbelow.\n 510(k) Number (ifk nown)\n\n K221000\n Device Name\n ON3D\n\n Indications for Use (Describe)\n ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient\n images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and\n treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.\n\n Type of Use (Select one or both, as applicable)\n X Prescription Use (Part 21 CFR 801 Subpart D) E Over-The-Counter Use (21 CFR 801 Subpart C)\n\n CONTINUE ON A SEPARATE PAGE IF NEEDED.",
+      "metadata": {
+        "page_number": 3,
+        "k_number": "K221000",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf"
+      }
+    },
+    {
+      "chunk_number": 5,
+      "chunk_id": "1a3a7f24-a770-4d4e-858a-67dfdccc566c",
+      "score": 1.4662833213806152,
+      "content": "May 23, 2022\n 3D ONS, Inc.\n ℅ DongHa Lee\n Regulatory Affairs Consultant\n KMC, Inc.\n Room no. 1709, 123, Digital-ro 26-gil, Guro-gu\n Seoul, 08390\n KOREA\n\n Re: K221000\n Trade/Device Name: ON3D\n Regulation Number: 21 CFR 892.2050\n Regulation Name: Medical image management and processing system\n\n Regulatory Class: Class II\n Product Code: LLZ\n Dated: March 30, 2022\n Received: April 4, 2022\n\n Dear DongHa Lee:",
+      "metadata": {
+        "k_number": "K221000",
+        "page_number": 1,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf"
+      }
+    }
+  ]
+}

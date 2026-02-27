@@ -1,0 +1,60 @@
+{ 
+  "query": "product code",
+  "retrieved_documents": [
+    {
+      "chunk_number": 1,
+      "chunk_id": "8adea8a8-e605-43a3-87ae-d93d6e4fb953",
+      "score": 1.0542981624603271,
+      "content": "Regulatory Class: Class II\n Product Code: FCG, ODG\n Dated: March 31, 2023\n Received: March 31, 2023\n\n Dear Paul Meyer:\n\n We have reviewed your Section 510(k) premarket notification of intent to market the device referenced\n above and have determined the device is substantially equivalent (for the indications for use stated in the\n enclosure) to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976,\n the enactment date of the Medical Device Amendments, or to devices that have been reclassified in\n accordance with the provisions of the Federal Food, Drug, and Cosmetic Act (Act) that do not require\n approval of a premarket approval application (PMA). You may, therefore, market the device, subject to\n the general controls provisions of the Act. Although this letter refers to your product as a device, please\n be aware that some cleared products may instead be combination products. The 510(k) Premarket\n Notification Database located at https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+      "metadata": {
+        "k_number": "K230909",
+        "page_number": 1,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230909.pdf"
+      }
+    },
+    {
+      "chunk_number": 2,
+      "chunk_id": "7432b64a-6f60-4fe4-8a8d-e1fc966d7ef4",
+      "score": 1.2728300094604492,
+      "content": "identifies combination product submissions. The general controls provisions of the Act include\n requirements for annual registration, listing of devices, good manufacturing practice, labeling, and\n prohibitions against misbranding and adulteration. Please note: CDRH does not evaluate information\n related to contract liability warranties. We remind you, however, that device labeling must be truthful\n and not misleading.\n\n If your device is classified (see above) into either class II (Special Controls) or class III (PMA), it may\n be subject to additional controls. Existing major regulations affecting your device can be found in the\n Code of Federal Regulations, Title 21, Parts 800 to 898. In addition, FDA may publish further\n announcements concerning your device in the Federal Register.\n\n Please be advised that FDA's issuance of a substantial equivalence determination does not mean that\n FDA has made a determination that your device complies with other requirements of the Act or any\n\n U.S. Food & Drug Administration\n 10903 New Hampshire Avenue Doc ID# 04017.06.02\n Silver Spring, MD 20993\n www.fda.gov",
+      "metadata": {
+        "page_number": 1,
+        "k_number": "K230909",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230909.pdf"
+      }
+    },
+    {
+      "chunk_number": 3,
+      "chunk_id": "4ed8fe7e-76d5-41a7-a47f-c61e92fc07e0",
+      "score": 1.3412976264953613,
+      "content": "Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR\n Part 807.97). For questions regarding the reporting of adverse events under the MDR regulation (21\n CFR Part 803), please go to https://www.fda.gov/medical-devices/medical-device-safety/medical-\n device-reporting-mdr-how-report-medical-device-problems.\n\n For comprehensive regulatory information about medical devices and radiation-emitting products,\n including information about labeling regulations, please see Device Advice\n (https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance) and CDRH\n Learn (https://www.fda.gov/training-and-continuing-education/cdrh-learn). Additionally, you may\n contact the Division of Industry and Consumer Education (DICE) to ask a question about a specific\n regulatory topic. See the DICE website (https://www.fda.gov/medical-devices/device-advice-\n comprehensive-regulatory-assistance/contact-us-division-industry-and-consumer-education-dice) for\n more information or contact DICE by email (DICE@fda.hhs.gov) or phone (1-800-638-2041 or 301-\n 796-7100).\n\n Sincerely,\n\n Shanil P. Haugen -S\n Shanil P. Haugen, Ph.D.",
+      "metadata": {
+        "k_number": "K230909",
+        "page_number": 2,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230909.pdf"
+      }
+    },
+    {
+      "chunk_number": 4,
+      "chunk_id": "846dab8c-bd92-4df8-afac-efccfe2d44aa",
+      "score": 1.4174336194992065,
+      "content": "K230909 - Paul Meyer Page 2\n\n Federal statutes and regulations administered by other Federal agencies. You must comply with all the\n Act's requirements, including, but not limited to: registration and listing (21 CFR Part 807); labeling (21\n CFR Part 801); medical device reporting (reporting of medical device-related adverse events) (21 CFR\n 803) for devices or postmarketing safety reporting (21 CFR 4, Subpart B) for combination products (see\n https://www.fda.gov/combination-products/guidance-regulatory-information/postmarketing-safety-\n reporting-combination-products); good manufacturing practice requirements as set forth in the quality\n systems (QS) regulation (21 CFR Part 820) for devices or current good manufacturing practices (21\n CFR 4, Subpart A) for combination products; and, if applicable, the electronic product radiation control\n provisions (Sections 531-542 of the Act); 21 CFR 1000-1050.",
+      "metadata": {
+        "page_number": 2,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230909.pdf",
+        "k_number": "K230909"
+      }
+    },
+    {
+      "chunk_number": 5,
+      "chunk_id": "f371c31e-b11d-48bc-9736-e14286807dde",
+      "score": 1.5320683717727661,
+      "content": "Type of Use (Select one or both, as applicable)\n Prescription Use (Part 21 CFR 801 Subpart D) Over-The-Counter Use (21 CFR 801 Subpart C)\n\n CONTINUE ON A SEPARATE PAGE IF NEEDED.\n\n This section applies only to requirements of the Paperwork Reduction Act of 1995.\n *DO NOT SEND YOUR COMPLETED FORM TO THE PRA STAFF EMAIL ADDRESS BELOW.*\n The burden time for this collection of information is estimated to average 79 hours per response, including the\n time to review instructions, search existing data sources, gather and maintain the data needed and complete\n and review the collection of information. Send comments regarding this burden estimate or any other aspect\n of this information collection, including suggestions for reducing this burden, to:\n Department of Health and Human Services\n Food and Drug Administration\n Office of Chief Information Officer\n Paperwork Reduction Act (PRA) Staff\n PRAStaff@fda.hhs.gov\n “An agency may not conduct or sponsor, and a person is not required to respond to, a collection of\n information unless it displays a currently valid OMB number.”\n\n FORM FDA 3881 (6/20) Page 1 of 1 PSC Publishing Services (301) 443-6740 EF",
+      "metadata": {
+        "page_number": 3,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K230909.pdf",
+        "k_number": "K230909"
+      }
+    }
+  ]
+}

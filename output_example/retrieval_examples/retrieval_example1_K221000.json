@@ -1,0 +1,61 @@
+{ 
+  "query": "k_number",
+  "retrieved_documents": [
+    {
+      "chunk_number": 1,
+      "chunk_id": "8f3c2f9a-357e-4b6d-8aa7-2e9b00882c2e",
+      "score": 1.5677372217178345,
+      "content": "DEPARTMENT OF HEALTH AND HUMAN SERVICES Form Approved: OMB No. 0910-0120\n Food and Drug Administration\n Expiration Date: 06/30/2023\n Indications for Use See PRA Statementbelow.\n 510(k) Number (ifk nown)\n\n K221000\n Device Name\n ON3D\n\n Indications for Use (Describe)\n ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient\n images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and\n treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.\n\n Type of Use (Select one or both, as applicable)\n X Prescription Use (Part 21 CFR 801 Subpart D) E Over-The-Counter Use (21 CFR 801 Subpart C)\n\n CONTINUE ON A SEPARATE PAGE IF NEEDED.",
+      "metadata": {
+        "page_number": 3,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf",
+        "k_number": "K221000"
+      }
+    },
+    {
+      "chunk_number": 2,
+      "chunk_id": "1a3a7f24-a770-4d4e-858a-67dfdccc566c",
+      "score": 1.607170581817627,
+      "content": "May 23, 2022\n 3D ONS, Inc.\n ℅ DongHa Lee\n Regulatory Affairs Consultant\n KMC, Inc.\n Room no. 1709, 123, Digital-ro 26-gil, Guro-gu\n Seoul, 08390\n KOREA\n\n Re: K221000\n Trade/Device Name: ON3D\n Regulation Number: 21 CFR 892.2050\n Regulation Name: Medical image management and processing system\n\n Regulatory Class: Class II\n Product Code: LLZ\n Dated: March 30, 2022\n Received: April 4, 2022\n\n Dear DongHa Lee:",
+      "metadata": {
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf",
+        "k_number": "K221000",
+        "page_number": 1
+      }
+    },
+    {
+      "chunk_number": 3,
+      "chunk_id": "8a4c10b3-210f-41c4-a755-d425c0c0f0c3",
+      "score": 1.6652354001998901,
+      "content": "K221000 - DongHa Lee Page 2\n\n requirements, including, but not limited to: registration and listing (21 CFR Part 807); labeling (21 CFR Part\n 801); medical device reporting (reporting of medical device-related adverse events) (21 CFR 803) for\n devices or postmarketing safety reporting (21 CFR 4, Subpart B) for combination products (see\n https://www.fda.gov/combination-products/guidance-regulatory-information/postmarketing-safety-reporting-\n combination-products); good manufacturing practice requirements as set forth in the quality systems (QS)\n regulation (21 CFR Part 820) for devices or current good manufacturing practices (21 CFR 4, Subpart A) for\n combination products; and, if applicable, the electronic product radiation control provisions (Sections 531-\n 542 of the Act); 21 CFR 1000-1050.\n\n Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part\n 807.97). For questions regarding the reporting of adverse events under the MDR regulation (21 CFR Part\n 803), please go to https://www.fda.gov/medical-devices/medical-device-safety/medical-device-reporting-\n mdr-how-report-medical-device-problems.",
+      "metadata": {
+        "k_number": "K221000",
+        "page_number": 2,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf"
+      }
+    },
+    {
+      "chunk_number": 4,
+      "chunk_id": "2ec2b159-bbb8-48b2-bad0-d55329d1e043",
+      "score": 1.6688909530639648,
+      "content": "Type of Use (Select one or both, as applicable)\n X Prescription Use (Part 21 CFR 801 Subpart D) E Over-The-Counter Use (21 CFR 801 Subpart C)\n\n CONTINUE ON A SEPARATE PAGE IF NEEDED.\n\n This section applies only to requirements of the Paperwork Reduction Act of 1995.\n *DO NOT SEND YOUR COMPLETED FORM TO THE PRA STAFF EMAIL ADDRESS BELOW.*\n The burden time for this collection of information is estimated to average 79 hours per response, including the\n time to review instructions, search existing data sources, gather and maintain the data needed and complete\n and review the collection of information. Send comments regarding this burden estimate or any other aspect\n of this information collection, including suggestions for reducing this burden, to:\n Department of Health and Human Services\n Food and Drug Administration\n Office of Chief Information Officer\n Paperwork Reduction Act (PRA) Staff\n PRAStaff@fda.hhs.gov\n \"An agency may not conduct or sponsor, and a person is not required to respond to, a collection of\n information unless it displays a currently valid OMB number.\"\n\n FORM FDA 3881 (6120) Page 1 of 1 PSCPubling Servimces (301) 443-6740 EF",
+      "metadata": {
+        "page_number": 3,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf",
+        "k_number": "K221000"
+      }
+    },
+    {
+      "chunk_number": 5,
+      "chunk_id": "ced58b9f-4db3-4cf8-b583-78a5861612aa",
+      "score": 1.7106455564498901,
+      "content": "510(k) Summary (K221000)\n\n This summary of 510(K) – safety and effectiveness information is being submitted in\n accordance with requirements of 21 CFR Part 807.92.\n\n Date: May 9, 2022\n\n 1. Applicant / Submission Sponsor\n 3D ONS, Inc.\n\n Address: 18, EONJU-RO171-GIL, GANGNAM-GU, SEOUL, 06023, SOUTH KOREA\n Tel: +82-2-511-8254 Fax: +82-2-511-8120\n Email: drcho@3dons.net\n\n 2. Submission Correspondent\n\n DongHa Lee (Consultant, KMC, Inc.)\n Address: Room no. 1709, 123, Digital-ro 26-gil, Guro-gu, Seoul, 08390, South Korea\n\n Tel: +82-70-8965-5554 Fax: +82-2-856-5904\n Email: dhlee@kmcerti.com\n\n 3. Device Identification\n\n - Trade/Proprietary Name: ON3D\n - Classification Name: Medical image management and processing system\n - Classification Regulation: 21 CFR 892.2050\n\n - Product Code: LLZ\n - Device Class: 2\n\n 4. Predicate Devices\n\n Manufacturer Patterson Dental Supply, Inc.\n Device Name Dolphin Imaging\n\n 510(k) number K110430\n Product Code LLZ\n\n 5. Device Description\n\n ON3D is a stand-alone software that captures, stores and present patient data in volumetric\n views to assist specialized dental practitioners for treatment and surgical planning and case\n\n 1 / 5",
+      "metadata": {
+        "k_number": "K221000",
+        "page_number": 4,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221000.pdf"
+      }
+    }
+  ]
+
+}

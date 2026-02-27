@@ -1,0 +1,60 @@
+{ 
+  "query": "intended use",
+  "retrieved_documents": [
+    {
+      "chunk_number": 1,
+      "chunk_id": "e94f46be-fc6c-432f-8fbe-1c56ea3a0e9c",
+      "score": 1.4581100940704346,
+      "content": "Product Code: OBP\n Dated: April 30, 2024\n Received: April 30, 2024\n\n Dear Juliane Rieß:\n\n We have reviewed your section 510(k) premarket notification of intent to market the device referenced above\n and have determined the device is substantially equivalent (for the indications for use stated in the enclosure)\n to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, the enactment\n date of the Medical Device Amendments, or to devices that have been reclassified in accordance with the\n provisions of the Federal Food, Drug, and Cosmetic Act (the Act) that do not require approval of a premarket\n approval application (PMA). You may, therefore, market the device, subject to the general controls\n provisions of the Act. Although this letter refers to your product as a device, please be aware that some\n cleared products may instead be combination products. The 510(k) Premarket Notification Database\n available at https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm identifies combination\n product submissions. The general controls provisions of the Act include requirements for annual registration,",
+      "metadata": {
+        "k_number": "K232639",
+        "page_number": 1,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf"
+      }
+    },
+    {
+      "chunk_number": 2,
+      "chunk_id": "2ee53fdd-1b82-4cf3-9076-4845ed75c75f",
+      "score": 1.5520015954971313,
+      "content": "in terms of iTBS treatment.\n\n 510(k) Summary Page 3 of 9",
+      "metadata": {
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "k_number": "K232639",
+        "page_number": 6
+      }
+    },
+    {
+      "chunk_number": 3,
+      "chunk_id": "88bbd617-9ad8-4f5a-bb1f-0f12a2b71918",
+      "score": 1.5616382360458374,
+      "content": "DEPARTMENT OF HEALTH AND HUMAN SERVICES Form Approved: OMB No. 0910-0120\n Food and Drug Administration\n Expiration Date: 07/31/2026\n Indications for Use See PRA Statement below.\n Submission Number (if known)\n K232639\n\n Device Name\n Apollo TMS Therapy System\n\n Indications for Use (Describe)\n The Apollo TMS Therapy System is indicated for the treatment of Major Depressive Disorder in adult\n\n patients who have failed to achieve satisfactory improvement from prior antidepressant medication in\n the current episode.\n\n Type of Use (Select one or both, as applicable)\n ZPrescription\n Use (Part 21 CFR 801 Subpart D) FOver-The-Counter Use (21 CFR 801 Subpart C)",
+      "metadata": {
+        "k_number": "K232639",
+        "page_number": 3,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf"
+      }
+    },
+    {
+      "chunk_number": 4,
+      "chunk_id": "6d89809e-ef85-4c45-99a6-39b2ee302a02",
+      "score": 1.608626365661621,
+      "content": "assistance/contact-us-division-industry-and-consumer-education-dice) for more information or contact DICE\n by email (DICE@fda.hhs.gov) or phone (1-800-638-2041 or 301-796-7100).\n\n Sincerely,\n Pamela D. Scott -S\n\n Pamela Scott, MS\n Assistant Director\n DHT5B: Division of Neuromodulation\n and Rehabilitation Devices\n OHT5: Office of Neurological\n and Physical Medicine Devices\n Office of Product Evaluation and Quality\n Center for Devices and Radiological Health\n\n Enclosure",
+      "metadata": {
+        "page_number": 2,
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "k_number": "K232639"
+      }
+    },
+    {
+      "chunk_number": 5,
+      "chunk_id": "a83e2488-c37a-4faa-8bf0-c00915ae5654",
+      "score": 1.610316276550293,
+      "content": "listing of devices, good manufacturing practice, labeling, and prohibitions against misbranding and\n adulteration. Please note: CDRH does not evaluate information related to contract liability warranties. We\n remind you, however, that device labeling must be truthful and not misleading.\n\n If your device is classified (see above) into either class II (Special Controls) or class III (PMA), it may be\n subject to additional controls. Existing major regulations affecting your device can be found in the Code of\n Federal Regulations, Title 21, Parts 800 to 898. In addition, FDA may publish further announcements\n concerning your device in the Federal Register.\n\n Additional information about changes that may require a new premarket notification are provided in the FDA\n guidance documents entitled \"Deciding When to Submit a 510(k) for a Change to an Existing Device\"\n (https://www.fda.gov/media/99812/download) and \"Deciding When to Submit a 510(k) for a Software\n Change to an Existing Device\" (https://www.fda.gov/media/99785/download).\n\n U.S. Food & Drug Administration\n 10903 New Hampshire Avenue Doc ID# 04017.06.10\n Silver Spring, MD 20993\n www.fda.gov",
+      "metadata": {
+        "k_number": "K232639",
+        "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232639.pdf",
+        "page_number": 1
+      }
+    }
+  ]
+}
