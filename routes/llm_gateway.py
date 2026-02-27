@@ -31,6 +31,14 @@ async def llm_gateway(llm_gateway_request: LLMGatewayRequest, app_settings : Set
                 "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
             }
         )
+    if os.path.exists(app_settings.DATABASE_DIR):
+        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
+        return JSONResponse(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            content={
+                "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
+            }
+        )
     retriever = Retriever(app_settings.DATABASE_DIR)
 
     embedding = Embedding()
@@ -41,7 +49,7 @@ async def llm_gateway(llm_gateway_request: LLMGatewayRequest, app_settings : Set
     context = []
 
     for i, (doc, score) in enumerate(retrieved_docs_and_scores):
-         context.append(f"""chunk {i+1}
+         context.append(f"""chunk_id: {doc.id}
 content: {doc.page_content}""") 
          
 

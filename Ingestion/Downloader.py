@@ -9,6 +9,9 @@ from pathlib import Path
 import logging
 
 class Downloader:
+    """
+    Downloads PDF files and store files metadata.
+    """
     def __init__(self, base_controller: BaseController):
         self.app_settings = get_settings()
         self.base_controller = base_controller
@@ -18,6 +21,9 @@ class Downloader:
         self.logger = logging.getLogger(__file__)
 
     def download_and_save_files(self):
+        """
+        Downloads and saves pdf files.
+        """
         for file_source in self.files_sources:
             headers = {
                 "User-Agent": "Mozilla/5.0"
@@ -47,6 +53,11 @@ class Downloader:
         return downloaded_files
     
     def save_files_metadata(self):
+        """
+        Saves metadata as a JSON file.
+        Returns:
+            dict: Dictinary of metadata
+        """
         metadata = {}
 
         for file in self.files_sources:
@@ -62,8 +73,6 @@ class Downloader:
             with open(self.metadata_path, "w") as f:
                 json.dump(metadata, f, indent=4)
 
-            
-            # Read and return content
             with open(self.metadata_path, "r") as f:
                 content = json.load(f)
 

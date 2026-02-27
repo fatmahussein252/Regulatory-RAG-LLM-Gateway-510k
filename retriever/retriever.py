@@ -4,11 +4,20 @@ from config import get_settings
 
 
 class Retriever:
+    """
+    Load vectorstore from persist directory.
+    Retrieve related chunks using similarity search.
+    """
     def __init__(self, persist_directory):
         self.persist_directory = persist_directory
 
 
     def load_vector_store(self, embedding: Embedding):
+        """
+        Loads vector database.
+        Returns:
+            vectorestore object: chromadb vectorstore
+        """
         vectorstore = Chroma(persist_directory=self.persist_directory, embedding_function=embedding.embeddings)
         return vectorstore
     
@@ -17,13 +26,6 @@ class Retriever:
     def retrieve_chunks(self, vectorstore, query, metadata_filter=None, k=5):
         """
         Retrieve relevant chunks from the vector store based on a query, with optional metadata filtering.
-
-        Args:
-            vectorstore: Chroma vector store.
-            query (str): User query (e.g., in Arabic).
-            metadata_filter (dict, optional): Metadata filter (e.g., {"book_name": "AI Ethics"}).
-            k (int): Number of chunks to retrieve (default: 20).
-
         Returns:
             List[Document]: List of retrieved chunks with metadata.
         """

@@ -5,15 +5,32 @@ import os
 import re
 import json
 from pathlib import Path
+from config.logging_config import get_logger
 
 class TextExtractor:
+    """
+    Extracts and clean text from PDFs.
+    Stores text files.
+    """
     def __init__(self, base_controller: BaseController):
         self.app_settings = get_settings()
         self.base_controller = base_controller
         self.txt_files_dir = self.base_controller.get_txt_files_dir()
+        self.logger = get_logger(__name__)
     
    
-
+    def save_text(self, cleaned_page_text):
+        """
+        Save cleaned text.
+        """
+         
+        try: 
+            with open(self.txt_file_path, 'a') as f:
+                        f.write(cleaned_page_text + '\n')
+        except Exception as e:
+            self.logger.error(f"Error writing txt file: {e}")
+        
+            
     def clean_text(self, text: str) -> str: 
         # Remove lines that contain only spaces/tabs 
         text = re.sub(r'^[ \t]+$', '', text, flags=re.MULTILINE) 
@@ -27,6 +44,11 @@ class TextExtractor:
         return text.strip()
     
     def extract_text(self, file_path: str, file_source: str):
+        """
+        Extract text from pdf files.
+        Returns:
+            List[dict]: List of dictionary contains pages text and metadata.
+        """
         with pdfplumber.open(file_path) as pdf:
             self.pdf_instance = pdf
         
@@ -34,9 +56,10 @@ class TextExtractor:
             self.pages = self.pdf_instance.pages
             self.doc_k_number = Path(file_path).stem
             
-            txt_file_path = os.path.join(self.txt_files_dir,f"{self.doc_k_number}.txt")
-            if os.path.exists(txt_file_path):
-                os.remove(txt_file_path)
+            self.txt_file_path = os.path.join(self.txt_files_dir,f"{self.doc_k_number}.txt")
+            
+            if os.path.exists(self.txt_file_path):
+                os.remove(self.txt_file_path)
 
             pages_list = []
             for page in self.pages:
@@ -46,8 +69,7 @@ class TextExtractor:
                 
                 cleaned_page_text = self.clean_text(page_text)
                 
-                with open(txt_file_path, 'a') as f:
-                    f.write(cleaned_page_text + '\n')
+                self.save_text(cleaned_page_text=cleaned_page_text)
 
                
                 pages_list.append(
@@ -62,6 +84,8 @@ class TextExtractor:
                 )
 
             return pages_list
+        
+
          
             
          

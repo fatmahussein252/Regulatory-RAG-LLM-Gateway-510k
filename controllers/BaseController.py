@@ -1,7 +1,10 @@
 from config import get_settings, Settings
 import os
 class BaseController:
-    
+    """
+    Handles directories creation.
+    """
+
     def __init__(self):
 
         self.app_settings = get_settings()

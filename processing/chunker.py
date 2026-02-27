@@ -3,6 +3,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from .chunk_enum import ChunkEnum
 
 class Chunker:
+    """
+    Create page documents with metadata.
+    Chunk documents.
+    
+    """
     def __init__(self):
         pass
         

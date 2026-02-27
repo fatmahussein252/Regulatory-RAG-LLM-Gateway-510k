@@ -4,6 +4,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
 class OpenRouterProvider:
+    """
+    Provides LLM API from OpenRouter.
+    Initializes model, prompt template and output parser.
+    Returns LLM Gateway chain. 
+    """
     def __init__(self, model_name: str):
         self.app_settings = get_settings()
         self.openrouter_api_key = self.app_settings.OPENROUTER_API_KEY
@@ -41,7 +46,7 @@ Extraction Rules:
 - Evidence must come from the provided context only.
 - Evidence format:
     {{
-    "chunk_id": "<chunk_number>",
+    "chunk_id": "<chunk_id>",
     "snippet": "<exact snippet from context>"
     }}
 Example:

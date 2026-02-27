@@ -3,6 +3,7 @@ from enum import Enum
 class ResponseSignal(Enum):
 
     DOWNLOAD_FILES_FAILURE = "failed_to_download_files"
+    NO_DOWNLOADED_FILES = "no_downloaded_files_to_process"
     FILES_METADATA_EXTRACTION_FAILURE = "failed_to_extract_files_metadata"
     TEXT_EXTRACTION_SUCCESS = "text_extracted_successfully"
     CHUNKING_FAILURE = "failed_to_chunk_text"

@@ -39,21 +39,30 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
         )
     
     embedding = Embedding()
+    if os.path.exists(app_settings.DATABASE_DIR):
+        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
+        return JSONResponse(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            content={
+                "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
+            }
+        )
     retriever = Retriever(app_settings.DATABASE_DIR)
 
     vectorstore = retriever.load_vector_store(embedding=embedding)
     full_extraction = {}
     for query in required_fields:
+        # Retrieve relevant chunks
         retrieved_docs_and_scores = retriever.retrieve_chunks(vectorstore, query, metadata_filter={"k_number": k_number})
 
         context = []
 
         for i, (doc, score) in enumerate(retrieved_docs_and_scores):
             context.append(
-                f"""[Chunk {i + 1}]
+                f"""[Chunk_id: {doc.id}]
 {doc.page_content}"""
             )
-            
+        # Get structured output   
         openrouter_provider = OpenRouterProvider(model_name=model_name)
         llm_chain = openrouter_provider.get_llm_gateway_chain()
         response = llm_chain.invoke({
@@ -61,7 +70,8 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
         "context": context
     })
         full_extraction.update(response)
-    
+
+    # Save structured output.
     try:
         output_path = os.path.join(output_dir, f"extraction_{k_number}.json" )
         with open(output_path, "w") as f:

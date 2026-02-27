@@ -10,9 +10,11 @@ ingest_router = APIRouter(
 )
 
 @ingest_router.get("/ingest")
-async def ingest_files(): # Settings here for type of returned object
+async def ingest_files():
     
     base_controller = BaseController()
+    
+    # Download PDFs files
     downloader = Downloader(base_controller=base_controller)
     downloaded_files = downloader.download_and_save_files()
     if not downloaded_files:
@@ -22,6 +24,8 @@ async def ingest_files(): # Settings here for type of returned object
                 "signal": ResponseSignal.DOWNLOAD_FILES_FAILURE.value
             }
         )
+    
+    # Save files metadata
     files_metadata_content = downloader.save_files_metadata()
     if not files_metadata_content:
         return JSONResponse(

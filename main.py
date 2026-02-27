@@ -3,6 +3,7 @@ from routes import base, ingest, retrieve, process_docs, embed_docs, llm_gateway
 from config.logging_config import setup_logging
 
 setup_logging()
+
 app = FastAPI()
 
 app.include_router(base.base_router)

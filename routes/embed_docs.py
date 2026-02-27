@@ -31,21 +31,33 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
     chunker = Chunker()
     embedding = Embedding()    
 
+    # check whether files where downloaded
     files_names = os.listdir(pdf_files_dir)
+    if len(files_names) == 0:
+        return JSONResponse(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            content={
+                "signal": ResponseSignal.NO_DOWNLOADED_FILES.value
+            }
+        )
 
     logger.info(f"Found {len(files_names)} in {pdf_files_dir} to be processed")
         
-    chunks = []
-    with open(files_metadata_path, "r") as f:
-        metadata = json.load(f)
+    # Get metadata
+    try: 
+        with open(files_metadata_path, "r") as f:
+            metadata = json.load(f)
+    except Exception as e:
+        logger.error(f"Error reading metadata file: {e}")
         
+    chunks = []   
     for file in files_names:
         file_path = os.path.join(
             pdf_files_dir,
             file
         )
         
-
+        # Extract and clean text
         pages_list = text_extractor.extract_text(
             file_path=file_path,
             file_source=metadata[os.path.basename(file_path)]["URL"],            
@@ -53,7 +65,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
         if not pages_list or len(pages_list) == 0:   
             logger.error(f"Failed to extract text and metadata from PDFs ")
         
-            
+        # chunk text   
         documnets = chunker.create_page_documents(
             pages_list=pages_list,
             )
@@ -73,7 +85,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
             }
         )
    
-    
+    # remove old database if exists before generation
     if(os.path.exists(app_settings.DATABASE_DIR)):
         try:
             shutil.rmtree(app_settings.DATABASE_DIR)
@@ -82,7 +94,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
         except OSError as e:
             logger.info(f"Error: {app_settings.DATABASE_DIR} : {e.strerror}")
     
-        
+    # Store embeddings    
     vectorstore = embedding.embed_text(
         chunks=chunks,
         persist_directory=app_settings.DATABASE_DIR
