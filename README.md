@@ -107,22 +107,10 @@ Schema:
   "model_name": "string"  # defaults to "stepfun/step-3.5-flash:free"
 }
 ```
+## Output Example
+Find examples under src/output_example
 
-## Example Output
 
-```json
-{
-    "k_number": {
-        "value": "K221000",
-        "evidence": [
-            {
-                "chunk_id": "1",
-                "snippet": "510(k) Number (ifk nown)\n\n K221000"
-            }
-        ]
-    }
-}
-```
 
 
 
