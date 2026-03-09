@@ -25,7 +25,7 @@ async def llm_gateway(llm_gateway_request: LLMGatewayRequest, app_settings : Set
     
   
     if not os.path.exists(app_settings.DATABASE_DIR):
-        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
+        logger.error(f"\nFaild to load vectorstore: vectorDB doesn't exist\n")
         return JSONResponse(
             status_code=status.HTTP_400_BAD_REQUEST,
             content={

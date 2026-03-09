@@ -33,7 +33,7 @@ async def process_docs( app_settings : Settings =Depends(get_settings)):
         )
 
 
-    logger.info(f"Found {len(files_names)} in {pdf_files_dir} to be processed")
+    logger.info(f"\nFound {len(files_names)} in {pdf_files_dir} to be processed\n")
         
     # Get metadata
     with open(files_metadata_path, "r") as f:
@@ -51,7 +51,7 @@ async def process_docs( app_settings : Settings =Depends(get_settings)):
             file_source=metadata[os.path.basename(file_path)]["URL"],            
             )
         if not pages_list or len(pages_list) == 0:   
-            logger.error(f"Failed to extract text and metadata from PDFs ")
+            logger.error(f"\nFailed to extract text and metadata from PDFs.\n")
 
     return JSONResponse(
         content={

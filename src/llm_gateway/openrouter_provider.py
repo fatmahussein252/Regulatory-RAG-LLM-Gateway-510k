@@ -41,6 +41,8 @@ Output Requirements:
 - If a field is not found in the context:
     - set "value" to null
     - set "evidence" to []
+- Analyze all chunks in the provided context.
+- If the required information is split across multiple chunks, combine the relevant parts and return the complete information.
 Extraction Rules:
 - Do NOT infer or guess.
 - Do NOT use external knowledge.

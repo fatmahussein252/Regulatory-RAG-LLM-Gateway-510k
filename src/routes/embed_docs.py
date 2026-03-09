@@ -42,7 +42,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
             }
         )
 
-    logger.info(f"Found {len(files_names)} in {pdf_files_dir} to be processed")
+    logger.info(f"\nFound {len(files_names)} in {pdf_files_dir} to be processed\n")
         
     # Get metadata
     try: 
@@ -64,7 +64,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
             file_source=metadata[os.path.basename(file_path)]["URL"],            
             )
         if not pages_list or len(pages_list) == 0:   
-            logger.error(f"Failed to extract text and metadata from PDFs ")
+            logger.error(f"\nFailed to extract text and metadata from PDFs\n")
         
         # chunk text   
         documnets = chunker.create_page_documents(
@@ -78,7 +78,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
 
   
     if not chunks or len(chunks) == 0:    
-        logger.error(f"Failed to chunk documents")      
+        logger.error(f"Failed to chunk documents\n")      
         return JSONResponse(
             status_code=status.HTTP_400_BAD_REQUEST,
             content={
@@ -91,7 +91,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
         try:
             shutil.rmtree(app_settings.DATABASE_DIR)
             os.mkdir(app_settings.DATABASE_DIR)
-            logger.info(f"Directory '{app_settings.DATABASE_DIR}' and all its contents have been removed.")
+            logger.info(f"\nDirectory '{app_settings.DATABASE_DIR}' and all its contents have been removed.\n")
         except OSError as e:
             logger.info(f"Error: {app_settings.DATABASE_DIR} : {e.strerror}")
     

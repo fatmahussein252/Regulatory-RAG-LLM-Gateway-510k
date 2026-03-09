@@ -40,7 +40,7 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
     
     embedding = Embedding()
     if not os.path.exists(app_settings.DATABASE_DIR):
-        logger.error(f"Faild to load vectorstore: vectorDB doesn't exist")
+        logger.error(f"\nFaild to load vectorstore: vectorDB doesn't exist\n")
         return JSONResponse(
             status_code=status.HTTP_400_BAD_REQUEST,
             content={
@@ -78,7 +78,7 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
             json.dump(full_extraction, f, indent=4)
         
     except Exception as e:
-        logger.error(f"Error writing output file: {e}")
+        logger.error(f"\nError writing output file: {e}\n")
     
     return JSONResponse(
             content={"full_extraction": full_extraction}   
