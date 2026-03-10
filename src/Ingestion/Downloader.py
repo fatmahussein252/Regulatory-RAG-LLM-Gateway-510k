@@ -37,9 +37,6 @@ class Downloader:
           
             parsed_url = urlparse(file_source)
             filename = os.path.basename(parsed_url.path)
-
-            if not os.path.exists(self.pdf_files_dir):
-                os.makedirs(self.pdf_files_dir)
             
             file_path = os.path.join(
                 self.pdf_files_dir,
@@ -49,6 +46,7 @@ class Downloader:
             with open(file_path, "wb") as f:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
+
         downloaded_files = len(os.listdir(self.pdf_files_dir))
         return downloaded_files
     
@@ -73,10 +71,7 @@ class Downloader:
             with open(self.metadata_path, "w") as f:
                 json.dump(metadata, f, indent=4)
 
-            with open(self.metadata_path, "r") as f:
-                content = json.load(f)
-
-            return content
+            return metadata
 
         except Exception as e:
             self.logger.error(f"Error writing metadata file: {e}")

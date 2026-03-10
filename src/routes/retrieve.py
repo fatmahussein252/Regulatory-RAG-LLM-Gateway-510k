@@ -2,7 +2,7 @@ from fastapi import FastAPI, APIRouter, Depends, status, Request
 from fastapi.responses import JSONResponse
 import os
 from embedding import Embedding
-from retriever import Retriever
+from retriever import VectorRetriever
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.retrieve import ProcessRequest
 from config import Settings, get_settings
@@ -32,7 +32,7 @@ async def retrieve_docs(process_request: ProcessRequest, app_settings : Settings
             }
         )
 
-    retriever = Retriever(persist_directory=app_settings.DATABASE_DIR)
+    retriever = VectorRetriever(persist_directory=app_settings.DATABASE_DIR)
     embedding = Embedding()
     
     vectorstore = retriever.load_vector_store(embedding=embedding)

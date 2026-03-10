@@ -3,7 +3,7 @@ from embedding import Embedding
 from config import get_settings
 
 
-class Retriever:
+class VectorRetriever:
     """
     Load vectorstore from persist directory.
     Retrieve related chunks using similarity search.

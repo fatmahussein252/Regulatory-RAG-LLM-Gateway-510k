@@ -1,10 +1,11 @@
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, status, Request
 from fastapi.responses import JSONResponse
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.process_docs import EmbeddingRequest
 from controllers import BaseController
 from processing import ChunkEnum, Chunker, TextExtractor
 from embedding import Embedding
+from langchain_community.retrievers import BM25Retriever
 from config import Settings, get_settings
 import os
 import json
@@ -19,7 +20,7 @@ embed_docs_router = APIRouter(
 )
 
 @embed_docs_router.post("/embed_docs")
-async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings =Depends(get_settings)): 
+async def embed_docs(request: Request, embdding_request: EmbeddingRequest, app_settings : Settings =Depends(get_settings)): 
     
     chunk_size = embdding_request.chunk_size if embdding_request.chunk_size else ChunkEnum.CHUNK_SIZE.value
     chunk_overlap = embdding_request.chunk_overlap_size if embdding_request.chunk_overlap_size else ChunkEnum.CHUNK_OVERLAP_SIZE.value
@@ -42,7 +43,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
             }
         )
 
-    logger.info(f"\nFound {len(files_names)} in {pdf_files_dir} to be processed\n")
+    logger.info(f"Found {len(files_names)} files in {pdf_files_dir} to be processed")
         
     # Get metadata
     try: 
@@ -64,7 +65,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
             file_source=metadata[os.path.basename(file_path)]["URL"],            
             )
         if not pages_list or len(pages_list) == 0:   
-            logger.error(f"\nFailed to extract text and metadata from PDFs\n")
+            logger.error(f"Failed to extract text and metadata from PDFs.")
         
         # chunk text   
         documnets = chunker.create_page_documents(
@@ -91,7 +92,7 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
         try:
             shutil.rmtree(app_settings.DATABASE_DIR)
             os.mkdir(app_settings.DATABASE_DIR)
-            logger.info(f"\nDirectory '{app_settings.DATABASE_DIR}' and all its contents have been removed.\n")
+            logger.info(f"Directory '{app_settings.DATABASE_DIR}' and all its contents have been removed.")
         except OSError as e:
             logger.info(f"Error: {app_settings.DATABASE_DIR} : {e.strerror}")
     
@@ -100,6 +101,13 @@ async def embed_docs(embdding_request: EmbeddingRequest, app_settings : Settings
         chunks=chunks,
         persist_directory=app_settings.DATABASE_DIR
     )
+    request.app.state.vectorstore = vectorstore
+    
+    # keyword Indexing
+    if embdding_request.keyword_index:
+        keyword_index = BM25Retriever.from_documents(chunks)
+        request.app.state.keyword_index = keyword_index
+
 
     if os.path.exists(app_settings.DATABASE_DIR):
         return JSONResponse(

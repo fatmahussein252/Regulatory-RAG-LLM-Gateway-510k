@@ -38,7 +38,7 @@ async def ingest_files():
     return JSONResponse(
         content={
             "downloaded files": downloaded_files,
-            "files_meta_data": files_metadata_content
+            "files_metadata": files_metadata_content
         }
     )
     

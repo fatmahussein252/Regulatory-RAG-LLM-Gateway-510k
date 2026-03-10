@@ -4,7 +4,8 @@ from .enums.ResponseEnum import ResponseSignal
 from .schemes.extract import ExtractRequest
 from controllers import BaseController
 from embedding import Embedding
-from retriever import Retriever
+from retriever import VectorRetriever, BMRetriever
+
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings
 import os
@@ -18,7 +19,7 @@ extraction_router = APIRouter(
 )
 
 @extraction_router.post("/extract")
-async def extract(extraction_request: ExtractRequest, app_settings : Settings =Depends(get_settings)):
+async def extract(request: Request,extraction_request: ExtractRequest, app_settings : Settings =Depends(get_settings)):
     base_controller = BaseController()
     output_dir = base_controller.get_output_dir()
     k_numbers = ["K221000", "K232639", "K230909"]
@@ -47,7 +48,7 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
                 "signal": ResponseSignal.DATABASE_LOADING_FAILURE.value
             }
         )
-    retriever = Retriever(app_settings.DATABASE_DIR)
+    retriever = VectorRetriever(app_settings.DATABASE_DIR)
 
     vectorstore = retriever.load_vector_store(embedding=embedding)
     full_extraction = {}
@@ -59,15 +60,26 @@ async def extract(extraction_request: ExtractRequest, app_settings : Settings =D
 
         for i, (doc, score) in enumerate(retrieved_docs_and_scores):
             context.append(
-                f"""[Chunk_id: {doc.id}]
-{doc.page_content}"""
+                f"""chunk_id: {doc.id}
+content: {doc.page_content}"""
             )
+
+        # Add keyword retrieved chunks to the context if indexed
+        if hasattr(request.app.state, "keyword_index"):
+            keyword_index = request.app.state.keyword_index
+            keyword_retriever = BMRetriever()
+            keyword_retrieved_docs = keyword_retriever.retrieve_docs(keyword_index=keyword_index, query=query, metadata_filter=llm_gateway_request.k_number) 
+
+            for i, doc in enumerate(keyword_retrieved_docs):
+                context.append(f"""chunk_id: {doc.id}
+        content: {doc.page_content}""")
+         
         # Get structured output   
         openrouter_provider = OpenRouterProvider(model_name=model_name)
         llm_chain = openrouter_provider.get_llm_gateway_chain()
         response = llm_chain.invoke({
         "query": query,
-        "context": context
+        "context": "\n\n".join(context)
     })
         full_extraction.update(response)
 

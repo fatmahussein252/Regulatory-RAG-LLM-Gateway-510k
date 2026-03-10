@@ -10,6 +10,11 @@ fastapi==0.133.1
 uvicorn==0.41.0
 openai==2.24.0
 langchain-openai==1.1.10
+rank-bm25==0.2.2
+langchain-community==0.4.1
+nltk==3.9.3
+
+
 
 
 
