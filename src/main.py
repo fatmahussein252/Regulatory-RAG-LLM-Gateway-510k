@@ -1,6 +1,7 @@
 from fastapi import FastAPI, APIRouter
 from routes import base, ingest, retrieve, process_docs, embed_docs, llm_gateway, extract
 from config.logging_config import setup_logging
+from langsmith import traceable
 
 setup_logging()
 

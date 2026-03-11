@@ -2,7 +2,7 @@ from config import Settings, get_settings
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-
+from tenacity import retry, stop_after_attempt, wait_exponential
 class OpenRouterProvider:
     """
     Provides LLM API from OpenRouter.
@@ -23,9 +23,7 @@ class OpenRouterProvider:
                 base_url="https://openrouter.ai/api/v1",
                 api_key=self.openrouter_api_key,
                 model=self.llm_model_name,
-                temperature=0.2,
-                timeout=60,       
-                max_retries=3,     
+                temperature=0.4   
             )
     def _init_prompt_template(self):
         self.prompt = ChatPromptTemplate.from_messages([
@@ -47,7 +45,7 @@ Extraction Rules:
 - Do NOT infer or guess.
 - Do NOT use external knowledge.
 - Extract text exactly as written when possible.
-- Evidence must come from the provided context only.
+- Evidence must be clear and come from the provided context only.
 - Evidence format:
     {{
     "chunk_id": "<chunk_id>",
@@ -64,7 +62,11 @@ if field not found in context:
              ),
             ("human", "query: {query}\ncontext: {context}")
         ])
-
+    
+    @retry(
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=1, min=2, max=30)
+    )
     def get_llm_gateway_chain(self):
         return self.prompt | self.llm | self.parser
     

@@ -1,19 +1,27 @@
 {
     "k_number": {
-        "value": "K221000",
+        "value": "k221000",
         "evidence": [
             {
-                "chunk_id": "1cb64d03-625e-4a6b-b626-691a264c5d1f",
-                "snippet": "510(k) Number (ifk nown)\n\n K221000"
+                "chunk_id": "5c3e56dd-1b34-4810-a56e-9cd0e404e3a3",
+                "snippet": "k221000"
+            },
+            {
+                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "snippet": "k221000"
+            },
+            {
+                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "snippet": "k221000"
             }
         ]
     },
     "device_name": {
-        "value": "ON3D",
+        "value": "on3d",
         "evidence": [
             {
-                "chunk_id": "1cb64d03-625e-4a6b-b626-691a264c5d1f",
-                "snippet": "Device Name\n ON3D"
+                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "snippet": "device name on3d"
             }
         ]
     },
@@ -22,89 +30,82 @@
         "evidence": []
     },
     "regulation_number": {
-        "value": "21 CFR Part 807.97, 21 CFR Part 803, 21 CFR Part 807, 21 CFR Part 801, 21 CFR 4, Subpart B, 21 CFR Part 820, 21 CFR 4, Subpart A, 21 CFR 1000-1050, 21 CFR 801 Subpart D, 21 CFR 801 Subpart C",
+        "value": "21 cfr 8922050",
         "evidence": [
             {
-                "chunk_id": "f23e5e86-baa1-46be-8f25-6decca5c36b9",
-                "snippet": "the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part 807.97)."
-            },
-            {
-                "chunk_id": "f23e5e86-baa1-46be-8f25-6decca5c36b9",
-                "snippet": "under the MDR regulation (21 CFR Part 803)"
-            },
-            {
-                "chunk_id": "02919d44-0630-4405-97fd-5754beb8a379",
-                "snippet": "registration and listing (21 CFR Part 807); labeling (21 CFR Part 801); medical device reporting (reporting of medical device-related adverse events) (21 CFR 803) for devices or postmarketing safety reporting (21 CFR 4, Subpart B) for combination products; good manufacturing practice requirements as set forth in the quality systems (QS) regulation (21 CFR Part 820) for devices or current good manufacturing practices (21 CFR 4, Subpart A) for combination products; and, if applicable, the electronic product radiation control provisions (Sections 531-542 of the Act); 21 CFR 1000-1050."
-            },
-            {
-                "chunk_id": "02919d44-0630-4405-97fd-5754beb8a379",
-                "snippet": "Also, please note the regulation entitled, \"Misbranding by reference to premarket notification\" (21 CFR Part 807.97)."
-            },
-            {
-                "chunk_id": "c55ac4ba-182c-4da9-bbd5-6403a67aafa9",
-                "snippet": "Prescription Use (Part 21 CFR 801 Subpart D)"
-            },
-            {
-                "chunk_id": "c55ac4ba-182c-4da9-bbd5-6403a67aafa9",
-                "snippet": "Over-The-Counter Use (21 CFR 801 Subpart C)"
+                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "snippet": "regulation number: 21 cfr 8922050"
             }
         ]
     },
     "product_code": {
-        "value": "LLZ",
+        "value": "llz",
         "evidence": [
             {
-                "chunk_id": "c90688ba-dbb9-4349-bdd5-1831c65cc2cc",
-                "snippet": "Product Code: LLZ"
+                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "snippet": "product code: llz"
             }
         ]
     },
     "intended_use": {
-        "value": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.",
+        "value": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners",
         "evidence": [
             {
-                "chunk_id": "1cb64d03-625e-4a6b-b626-691a264c5d1f",
-                "snippet": "Indications for Use (Describe)\n ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners."
+                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "snippet": "indications for use describe on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners"
             }
         ]
     },
     "indications_for_use": {
-        "value": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners.",
+        "value": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis",
         "evidence": [
             {
-                "chunk_id": "1cb64d03-625e-4a6b-b626-691a264c5d1f",
-                "snippet": "ON3D is software that is designed for use by specialized dental practices for capturing, storing and presenting patient\n images and assisting in treatment planning and case diagnosis. Results produced by the software's diagnostic and\n treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners."
+                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "snippet": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners"
             }
         ]
     },
     "predicate_devices": {
-        "value": "Dolphin Imaging (K110430)",
+        "value": "legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma",
         "evidence": [
             {
-                "chunk_id": "9001853a-d6c4-45bb-8811-655758eb46df",
-                "snippet": "ON3D is substantially equivalent to the predicate devices, Dolphin Imaging (K110430)."
+                "chunk_id": "e819da43-c786-4e6e-a122-1d2e7e4a062c",
+                "snippet": "to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
+            },
+            {
+                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "snippet": "to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
             }
         ]
     },
     "technology_description": {
-        "value": null,
-        "evidence": []
-    },
-    "testing_summary": {
-        "value": "the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed, recommended, or suggested in the labeling of the device.",
+        "value": "on3d is a standalone software that captures stores and present patient data in volumetric views to assist specialized dental practitioners for treatment and surgical planning and case",
         "evidence": [
             {
-                "chunk_id": "44023a0a-351f-4cc6-8492-e1dceafcac5a",
-                "snippet": "the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed, recommended, or suggested in the labeling of the device."
+                "chunk_id": "243565d9-c5a2-447a-ad3b-e386c13a8167",
+                "snippet": "on3d is a standalone software that captures stores and present patient data in volumetric views to assist specialized dental practitioners for treatment and surgical planning and case"
+            }
+        ]
+    },
+    "testing_summary": {
+        "value": "the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests the performance testing bench testing was performed as the software systemlevel test to assess the effectiveness of the device standalone software performance including each ui as open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist",
+        "evidence": [
+            {
+                "chunk_id": "4829eaa3-26b6-47f1-b606-d331a96f5171",
+                "snippet": "the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests"
+            },
+            {
+                "chunk_id": "a0a009cc-c271-4ff7-b0ab-c2b472a8df44",
+                "snippet": "the performance testing bench testing was performed as the software systemlevel test to assess the effectiveness of the device standalone software performance including each ui as open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist"
             }
         ]
     },
     "substantial_equivalence_rationale": {
-        "value": "does not raise concerns in safety and effectiveness for the proposed intended use",
+        "value": "The device is substantially equivalent to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, or to devices that have been reclassified in accordance with the provisions of the Federal Food, Drug, and Cosmetic Act that do not require approval of a premarket approval application (PMA).",
         "evidence": [
             {
-                "chunk_id": "e6cf2445-ca3c-4a34-a713-f05639f406e5",
-                "snippet": "Therefore, we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device."
+                "chunk_id": "e819da43-c786-4e6e-a122-1d2e7e4a062c",
+                "snippet": "have determined the device is substantially equivalent for the indications for use stated in the enclosure to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
             }
         ]
     }

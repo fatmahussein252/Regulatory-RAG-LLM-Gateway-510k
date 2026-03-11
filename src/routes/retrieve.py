@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 import os
 from embedding import Embedding
 from retriever import VectorRetriever
+from helpers.utils import normalize_text
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.retrieve import ProcessRequest
 from config import Settings, get_settings
@@ -16,7 +17,7 @@ retrieve_router = APIRouter(
 @retrieve_router.post("/retrieve")
 async def retrieve_docs(process_request: ProcessRequest, app_settings : Settings =Depends(get_settings)): 
     
-    query = process_request.query
+    query = normalize_text(process_request.query)
 
     metadata_filter = {"k_number": process_request.k_number} if process_request.k_number else None
     

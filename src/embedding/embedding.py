@@ -26,10 +26,18 @@ class Embedding:
         """
         self.logger.info(f"storing vectorDB at {persist_directory}...")
         # Store in Chroma
-        return Chroma.from_documents(
+
+        try:
+            vectorstore = Chroma.from_documents(
             documents=chunks,
             embedding=self.embeddings,
             persist_directory=persist_directory
-        )
+            )
+            return True, vectorstore
+        except Exception as e:
+            self.logger.error(f"Failed to store vectordb: {e}")  
+            return False, None
+
+         
 
     

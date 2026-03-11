@@ -9,9 +9,10 @@ from langchain_community.retrievers import BM25Retriever
 from config import Settings, get_settings
 import os
 import json
-import logging
 import shutil
+from helpers.utils import normalize_text
 from config.logging_config import get_logger
+
 
 logger = get_logger(__name__)
 
@@ -87,35 +88,37 @@ async def embed_docs(request: Request, embdding_request: EmbeddingRequest, app_s
             }
         )
    
-    # remove old database if exists before generation
-    if(os.path.exists(app_settings.DATABASE_DIR)):
-        try:
-            shutil.rmtree(app_settings.DATABASE_DIR)
-            os.mkdir(app_settings.DATABASE_DIR)
-            logger.info(f"Directory '{app_settings.DATABASE_DIR}' and all its contents have been removed.")
-        except OSError as e:
-            logger.info(f"Error: {app_settings.DATABASE_DIR} : {e.strerror}")
+    # Get Database directory
+    persist_directory = base_controller.get_db_dir()
     
     # Store embeddings    
-    vectorstore = embedding.embed_text(
+    embedded_successfully, vectorstore = embedding.embed_text(
         chunks=chunks,
-        persist_directory=app_settings.DATABASE_DIR
+        persist_directory=persist_directory
     )
     request.app.state.vectorstore = vectorstore
     
     # keyword Indexing
     if embdding_request.keyword_index:
-        keyword_index = BM25Retriever.from_documents(chunks)
+        keyword_index = BM25Retriever.from_documents(chunks, preprocess_func=normalize_text)
         request.app.state.keyword_index = keyword_index
 
 
-    if os.path.exists(app_settings.DATABASE_DIR):
+    if embedded_successfully:
         return JSONResponse(
                 content={
                     "signal": ResponseSignal.VECTORDB_STORAGE_SUCCESS.value,
-                    "vectordb_stored_at": app_settings.DATABASE_DIR
+                    "vectordb_stored_at": str(persist_directory)
                 }
             )
+    else:
+       return JSONResponse(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                content={
+                    "signal": ResponseSignal.VECTORDB_STORAGE_FAILURE.value,
+                }
+            ) 
+
 
         
     

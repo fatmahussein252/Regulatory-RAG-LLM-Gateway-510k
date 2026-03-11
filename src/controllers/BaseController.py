@@ -1,5 +1,8 @@
 from config import get_settings, Settings
 import os
+import shutil
+from pathlib import Path
+from config.logging_config import get_logger
 class BaseController:
     """
     Handles directories creation.
@@ -25,30 +28,61 @@ class BaseController:
             self.base_dir,
             "Output"
             )
+        self.logger = get_logger(__name__)
 
       
 
-    def get_txt_files_dir(self):
-        if not os.path.exists(self.txt_files_dir):
-            os.makedirs(self.txt_files_dir)
-        
-        return self.txt_files_dir
-    
+  
+    def get_txt_files_dir(self) -> Path:
+        txt_dir = Path(self.txt_files_dir)
+
+        try:
+            txt_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.error(f"Failed to create directory {txt_dir}: {e}")
+            raise
+
+        return txt_dir
+
     def get_pdf_files_dir(self):
-        if not os.path.exists(self.pdf_files_dir):
-            os.makedirs(self.pdf_files_dir)
-        
-        return self.pdf_files_dir
+        pdfs_dir = Path(self.pdf_files_dir)
+        try:
+            pdfs_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.error(f"Failed to create directory {pdfs_dir}: {e}")
+
+        return pdfs_dir
     
     def get_files_metadata_path(self):
-        if not os.path.exists(self.metadata_path):
-            os.makedirs(self.metadata_path)
+        files_metadata_path = Path(self.metadata_path)
+        try:
+            files_metadata_path.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.error(f"Failed to create directory {files_metadata_path}: {e}")
         
-        return os.path.join(self.metadata_path, "files_metadata.json")
+        return files_metadata_path / "files_metadata.json"       
     
     def get_output_dir(self):
-        if not os.path.exists(self.output_dir):
-            os.makedirs(self.output_dir)
+        output_dir = Path(self.output_dir)
+        try:
+            output_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.error(f"Failed to create directory {output_dir}: {e}")
         
-        return self.output_dir  
+        return output_dir  
+    
+    def get_db_dir(self):
+        db_dir = Path(self.app_settings.DATABASE_DIR)
+
+        try:
+            if db_dir.exists():
+                shutil.rmtree(db_dir)
+                self.logger.info(f"Removed existing database directory: {db_dir}")
+
+            db_dir.mkdir(parents=True, exist_ok=True)
+
+        except OSError as e:
+            self.logger.error(f"Failed to reset database directory {db_dir}: {e}")
+        
+        return db_dir
     

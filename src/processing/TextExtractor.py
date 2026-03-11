@@ -5,6 +5,7 @@ import os
 import re
 import json
 from pathlib import Path
+from helpers.utils import normalize_text
 from config.logging_config import get_logger
 
 class TextExtractor:
@@ -19,29 +20,18 @@ class TextExtractor:
         self.logger = get_logger(__name__)
     
    
-    def save_text(self, cleaned_page_text):
+    def save_text(self, normalized_page_text):
         """
         Save cleaned text.
         """
          
         try: 
             with open(self.txt_file_path, 'a') as f:
-                        f.write(cleaned_page_text + '\n')
-        except Exception as e:
+                        f.write(normalized_page_text + '\n')
+        except OSError as e:
             self.logger.error(f"Error writing txt file: {e}")
         
             
-    def clean_text(self, text: str) -> str: 
-        # Remove lines that contain only spaces/tabs 
-        text = re.sub(r'^[ \t]+$', '', text, flags=re.MULTILINE) 
-        # Replace multiple blank lines with a maximum of two 
-        text = re.sub(r'\n{3,}', '\n\n', text) 
-        # Strip trailing spaces on each line 
-        text = re.sub(r'[ \t]+$', '', text, flags=re.MULTILINE) 
-        # Remove excessive internal spacing (but keep single spaces) 
-        text = re.sub(r'[ \t]{2,}', ' ', text) 
-        
-        return text.strip()
     
     def extract_text(self, file_path: str, file_source: str):
         """
@@ -67,14 +57,14 @@ class TextExtractor:
                 # Extract text
                 page_text = page.extract_text(layout=True) or ""
                 
-                cleaned_page_text = self.clean_text(page_text)
+                normalized_page_text = normalize_text(page_text)
                 
-                self.save_text(cleaned_page_text=cleaned_page_text)
+                self.save_text(normalized_page_text=normalized_page_text)
 
                
                 pages_list.append(
                     {
-                    "page_content": cleaned_page_text,
+                    "page_content": normalized_page_text,
                     "metadata": {
                         "k_number": self.doc_k_number,
                         "source_url": file_source,

@@ -73,6 +73,6 @@ class Downloader:
 
             return metadata
 
-        except Exception as e:
+        except OSError as e:
             self.logger.error(f"Error writing metadata file: {e}")
             return None

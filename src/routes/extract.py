@@ -5,7 +5,7 @@ from .schemes.extract import ExtractRequest
 from controllers import BaseController
 from embedding import Embedding
 from retriever import VectorRetriever, BMRetriever
-
+from helpers.utils import normalize_text
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings
 import os
@@ -53,6 +53,7 @@ async def extract(request: Request,extraction_request: ExtractRequest, app_setti
     vectorstore = retriever.load_vector_store(embedding=embedding)
     full_extraction = {}
     for query in required_fields:
+        query = normalize_text(query)
         # Retrieve relevant chunks
         retrieved_docs_and_scores = retriever.retrieve_chunks(vectorstore, query, metadata_filter={"k_number": k_number})
 
@@ -68,7 +69,7 @@ content: {doc.page_content}"""
         if hasattr(request.app.state, "keyword_index"):
             keyword_index = request.app.state.keyword_index
             keyword_retriever = BMRetriever()
-            keyword_retrieved_docs = keyword_retriever.retrieve_docs(keyword_index=keyword_index, query=query, metadata_filter=llm_gateway_request.k_number) 
+            keyword_retrieved_docs = keyword_retriever.retrieve_docs(keyword_index=keyword_index, query=query, metadata_filter=k_number) 
 
             for i, doc in enumerate(keyword_retrieved_docs):
                 context.append(f"""chunk_id: {doc.id}

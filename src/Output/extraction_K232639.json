@@ -1,0 +1,106 @@
+{
+    "k_number": {
+        "value": null,
+        "evidence": []
+    },
+    "device_name": {
+        "value": null,
+        "evidence": []
+    },
+    "applicant": {
+        "value": "juliane rie\u00df",
+        "evidence": [
+            {
+                "chunk_id": "b73a81b5-cc3f-4ac1-9587-1e2f2263df97",
+                "snippet": "dear juliane rie\u00df:"
+            }
+        ]
+    },
+    "regulation_number": {
+        "value": null,
+        "evidence": []
+    },
+    "product_code": {
+        "value": "obp",
+        "evidence": [
+            {
+                "chunk_id": "b73a81b5-cc3f-4ac1-9587-1e2f2263df97",
+                "snippet": "product code: obp"
+            }
+        ]
+    },
+    "intended_use": {
+        "value": "indicated for the treatment of major depressive disorder in adult patients who have failed to achieve satisfactory improvement from prior antidepressant medication in the current episode",
+        "evidence": [
+            {
+                "chunk_id": "ba79ca71-bb25-48f6-ac82-1effab94141e",
+                "snippet": "indicated for the treatment of is indicated for the treatment of indicated for the treatment of major major depressive disorder in adult major depressive disorder in adult depressive disorder in adult patients who have failed to achieve patients who have failed to achieve satisfactory improvement from satisfactory improvement from prior satisfactory improvement from prior prior antidepressant medication in antidepressant medication in the antidepressant medication in the current episode current episode current episode product code obp obp obp"
+            }
+        ]
+    },
+    "indications_for_use": {
+        "value": "the apollo tms therapy system is indicated for the treatment of major depressive disorder in adult patients who have failed to achieve satisfactory improvement from prior antidepressant medication in the current episode",
+        "evidence": [
+            {
+                "chunk_id": "6c696598-f2ce-434e-b9f3-3977ec958733",
+                "snippet": "the apollo tms therapy system is indicated for the treatment of major depressive disorder in adult patients who have failed to achieve satisfactory improvement from prior antidepressant medication in the current episode"
+            }
+        ]
+    },
+    "predicate_devices": {
+        "value": "horizon tms therapy system k182853 and apollo tms therapy system k180313",
+        "evidence": [
+            {
+                "chunk_id": "db33e898-f5cb-4243-bc76-c02c678d4298",
+                "snippet": "and its predicate devices horizon tms therapy system k182853 and apollo tms therapy system k180313"
+            }
+        ]
+    },
+    "technology_description": {
+        "value": "the software documentation for this device is considered as basic documentation supported by special controls guidance rtms class ii the apollo tms therapy system complies with applicable requirements of the following additional standards: iso 14971 medical devices application of risk management to medical devices iso 15223 medical devices symbols to be used with medical device labels labeling and information to be supplied part 1: general requirements iec 8100151 health software and health it systems safety effectiveness and security part 51: security activities in the product life cycle iec 6060112 medical electrical equipment part 12: general requirements for basic safety and essential performance collateral standard: electromagnetic disturbances requirements and tests iec 6060116 medical electrical equipment part 16: general requirements for basic safety and essential performance collateral standard: usability iec 62304 medical device software software life cycle processes coil winding: outer 80 mm 92 mm 97 mm 92 mm 80 mm diameter coil winding: wire 64 mm 29 mm 64 mm 29 mm diameter surface tempera 48 c for less than 10 minutes 510k summary apollo tms therapy system characteristic subject device predicate device secondary predicate stimulation frequency 10 hz 10 hz 10 hz pulse train duration 4 sec 4 sec 4 sec intertrain interval 11 26 sec 11 26 sec 11 26 sec trains per session 75 75 75 max no of pulses 3000 3000 3000 output stimulation parameters amplitude in smt 0 20 smt 028 19 smt 0 20 smt units pulse width pcool coils: acool coils: horizon horizon horizon hanscoil accuracy hanspcool hansacool mt remote ez cool afc pmd70pcool pmd70acool coil coil",
+        "evidence": [
+            {
+                "chunk_id": "66354716-06bd-4e4e-a8e6-9b1582d78a6a",
+                "snippet": "the software documentation for this device is considered as basic documentation supported by special controls guidance rtms class ii"
+            },
+            {
+                "chunk_id": "0212c646-3a32-45ab-933c-84eb34f9efa1",
+                "snippet": "the apollo tms therapy system complies with applicable requirements of the following additional standards: iso 14971 medical devices application of risk management to medical devices iso 15223 medical devices symbols to be used with medical device labels labeling and information to be supplied part 1: general requirements iec 8100151 health software and health it systems safety effectiveness and security part 51: security activities in the product life cycle"
+            },
+            {
+                "chunk_id": "b0567c0b-ddb8-4818-8c5d-4c5e1df9d2c7",
+                "snippet": "iec 6060112 medical electrical equipment part 12: general requirements for basic safety and essential performance collateral standard: electromagnetic disturbances requirements and tests iec 6060116 medical electrical equipment part 16: general requirements for basic safety and essential performance collateral standard: usability iec 62304 medical device software software life cycle processes"
+            },
+            {
+                "chunk_id": "None",
+                "snippet": "coil winding: outer 80 mm 92 mm 97 mm 92 mm 80 mm diameter coil winding: wire 64 mm 29 mm 64 mm 29 mm diameter surface tempera 48 c for less than 10 minutes"
+            },
+            {
+                "chunk_id": "None",
+                "snippet": "510k summary apollo tms therapy system characteristic subject device predicate device secondary predicate stimulation frequency 10 hz 10 hz 10 hz pulse train duration 4 sec 4 sec 4 sec intertrain interval 11 26 sec 11 26 sec 11 26 sec trains per session 75 75 75 max no of pulses 3000 3000 3000 output stimulation parameters amplitude in smt 0 20 smt 028 19 smt 0 20 smt units pulse width pcool coils: acool coils: horizon horizon horizon hanscoil accuracy hanspcool hansacool mt remote ez cool afc pmd70pcool pmd70acool coil coil"
+            }
+        ]
+    },
+    "testing_summary": {
+        "value": "software verification and validation testing was conducted and documented in accordance with iec 62304 and the documentation was provided as recommended by fdas guidance for industry and fda staff guidance for the content of premarket submissions for software contained in medical devices",
+        "evidence": [
+            {
+                "chunk_id": "4b084843-a353-44e3-853c-e7eeefa767ac",
+                "snippet": "software verification and validation testing was conducted and documented in accordance with iec 62304 and the documentation was provided as recommended by fdas guidance for industry and fda staff guidance for the content of premarket submissions for software contained in medical devices"
+            },
+            {
+                "chunk_id": "0892586e-89b9-4be0-9648-2128d250e50c",
+                "snippet": "software verification and validation testing was conducted and documented in accordance with iec 62304 and the documentation was provided as recommended by fdas guidance for industry and fda staff guidance for the content of premarket submissions for software contained in medical devices"
+            }
+        ]
+    },
+    "substantial_equivalence_rationale": {
+        "value": "the intended use and indications for use for the apollo tms therapy system and predicate devices are identical the apollo tms therapy system and the secondary predicate device have equivalent system components consisting of a main unit available in two variants 918001 apollo and 918010 apollo",
+        "evidence": [
+            {
+                "chunk_id": "c4f6cec9-f681-4d34-8092-a781a1e88c33",
+                "snippet": "compared to the standard stimulation protocol blumberger et al 20181 substantial equivalence the apollo tms therapy system is substantially equivalent to its predicate devices the horizon tms therapy system k182853 and apollo tms therapy system k180313 the intended use and indications for use for the apollo tms therapy system and predicate devices are identical the apollo tms therapy system and the secondary predicate device have equivalent system components consisting of a main unit available in two variants 918001 apollo and 918010 apollo"
+            }
+        ]
+    }
+}

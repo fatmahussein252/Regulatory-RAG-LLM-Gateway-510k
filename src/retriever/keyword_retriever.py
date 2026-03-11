@@ -1,12 +1,14 @@
 from langchain_community.retrievers import BM25Retriever
 from config.logging_config import get_logger
-
+from helpers.utils import normalize_text
 class BMRetriever:
     def __init__(self):
         self.k_numbers = ["K221000", "K232639", "K230909"]
         self.logger = get_logger(__name__)
 
     def retrieve_docs(self, keyword_index: BM25Retriever, query: str, metadata_filter: str):
+        query = normalize_text(query)
+        
         if metadata_filter not in self.k_numbers:
             self.logger.error("\n Invalid metadata filter.\n")
             return None

@@ -4,6 +4,7 @@ from .enums.ResponseEnum import ResponseSignal
 from .schemes.llm_gateway import LLMGatewayRequest
 from embedding import Embedding
 from retriever import VectorRetriever, BMRetriever
+from helpers.utils import normalize_text
 from llm_gateway import OpenRouterProvider
 from config import Settings, get_settings
 import os
@@ -18,10 +19,13 @@ llm_gateway_router = APIRouter(
 
 @llm_gateway_router.post("/llm_gateway")
 async def llm_gateway(request: Request, llm_gateway_request: LLMGatewayRequest, app_settings : Settings =Depends(get_settings)): 
-    query = llm_gateway_request.query
+    
+    query = normalize_text(llm_gateway_request.query)
+    
     model_name = llm_gateway_request.model_name if llm_gateway_request.model_name else app_settings.OPENROUTER_MODEL_NAME
     
-    metadata_filter = {"k_number": llm_gateway_request.k_number} if llm_gateway_request.k_number else None
+    k_number = llm_gateway_request.k_number
+    metadata_filter = {"k_number": k_number} if k_number else None
     
   
     if not os.path.exists(app_settings.DATABASE_DIR):
@@ -56,7 +60,10 @@ content: {doc.page_content}""")
     if hasattr(request.app.state, "keyword_index"):
         keyword_index = request.app.state.keyword_index
         keyword_retriever = BMRetriever()
-        keyword_retrieved_docs = keyword_retriever.retrieve_docs(keyword_index=keyword_index, query=query, metadata_filter=llm_gateway_request.k_number) 
+        keyword_retrieved_docs = keyword_retriever.retrieve_docs(
+            keyword_index=keyword_index,
+            query=query,
+            metadata_filter=k_number) 
 
         for i, doc in enumerate(keyword_retrieved_docs):
             context.append(f"""chunk_id: {doc.id}
