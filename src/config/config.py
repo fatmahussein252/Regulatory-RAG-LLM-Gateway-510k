@@ -11,12 +11,6 @@ class Settings(BaseSettings):
     OPENROUTER_API_KEY: str
     DATABASE_DIR: str
 
-
-    LANGSMITH_TRACING: str
-    LANGSMITH_ENDPOINT: str
-    LANGSMITH_API_KEY: str
-    LANGSMITH_PROJECT: str
-
     model_config = SettingsConfigDict(env_file=".env")
 
 

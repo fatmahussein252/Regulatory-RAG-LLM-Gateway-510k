@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from .enums.ResponseEnum import ResponseSignal
 from .schemes.process_docs import EmbeddingRequest
 from controllers import BaseController
-from processing import ChunkEnum, Chunker, TextExtractor
+from processing import ChunkEnum, Chunker, TextExtractor, LlamaIndexChunker
 from embedding import Embedding
 from langchain_community.retrievers import BM25Retriever
 from config import Settings, get_settings
@@ -32,6 +32,7 @@ async def embed_docs(request: Request, embdding_request: EmbeddingRequest, app_s
 
     text_extractor = TextExtractor(base_controller=base_controller)
     chunker = Chunker()
+    #llamaindex_chunking = LlamaIndexChunker()
     embedding = Embedding()    
 
     # check whether files where downloaded
@@ -69,12 +70,15 @@ async def embed_docs(request: Request, embdding_request: EmbeddingRequest, app_s
             logger.error(f"Failed to extract text and metadata from PDFs.")
         
         # chunk text   
-        documnets = chunker.create_page_documents(
+        documents = chunker.create_page_documents(
             pages_list=pages_list,
             )
         
+        """ # Section-aware chunking
+        chunks = llamaindex_chunking.get_llama_index_chunks()"""
+        
         chunks.extend(chunker.chunk_documents(
-            documents=documnets,
+            documents=documents,
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap))
 
