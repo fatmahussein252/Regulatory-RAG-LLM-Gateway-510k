@@ -3,16 +3,16 @@
         "value": "k221000",
         "evidence": [
             {
-                "chunk_id": "5c3e56dd-1b34-4810-a56e-9cd0e404e3a3",
-                "snippet": "k221000"
+                "chunk_id": "7f3467c6-95dd-4d72-a36b-3bb9668c913c",
+                "snippet": "k221000 dongha lee page 2"
             },
             {
-                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
-                "snippet": "k221000"
+                "chunk_id": "7dc1a58a-052a-488d-8670-b6ada379dcf0",
+                "snippet": "510k number ifk nown k221000"
             },
             {
-                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
-                "snippet": "k221000"
+                "chunk_id": "ccb3f14e-d428-4ff5-a3cc-866b1912e7bd",
+                "snippet": "re: k221000"
             }
         ]
     },
@@ -20,8 +20,12 @@
         "value": "on3d",
         "evidence": [
             {
-                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "chunk_id": "7dc1a58a-052a-488d-8670-b6ada379dcf0",
                 "snippet": "device name on3d"
+            },
+            {
+                "chunk_id": "ccb3f14e-d428-4ff5-a3cc-866b1912e7bd",
+                "snippet": "trade/device name: on3d"
             }
         ]
     },
@@ -33,7 +37,7 @@
         "value": "21 cfr 8922050",
         "evidence": [
             {
-                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "chunk_id": "ccb3f14e-d428-4ff5-a3cc-866b1912e7bd",
                 "snippet": "regulation number: 21 cfr 8922050"
             }
         ]
@@ -42,7 +46,7 @@
         "value": "llz",
         "evidence": [
             {
-                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
+                "chunk_id": "ccb3f14e-d428-4ff5-a3cc-866b1912e7bd",
                 "snippet": "product code: llz"
             }
         ]
@@ -51,61 +55,73 @@
         "value": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners",
         "evidence": [
             {
-                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
-                "snippet": "indications for use describe on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners"
-            }
-        ]
-    },
-    "indications_for_use": {
-        "value": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis",
-        "evidence": [
-            {
-                "chunk_id": "49bbd8e9-9196-488f-bf40-c41a73f5cd5d",
+                "chunk_id": "7dc1a58a-052a-488d-8670-b6ada379dcf0",
                 "snippet": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners"
             }
         ]
     },
-    "predicate_devices": {
-        "value": "legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma",
+    "indications_for_use": {
+        "value": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners",
         "evidence": [
             {
-                "chunk_id": "e819da43-c786-4e6e-a122-1d2e7e4a062c",
-                "snippet": "to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
-            },
+                "chunk_id": "7dc1a58a-052a-488d-8670-b6ada379dcf0",
+                "snippet": "on3d is software that is designed for use by specialized dental practices for capturing storing and presenting patient images and assisting in treatment planning and case diagnosis results produced by the softwares diagnostic and treatment planning tools are dependent on the interpretation of trained and licensed dental practitioners"
+            }
+        ]
+    },
+    "predicate_device": {
+        "value": "dolphin imaging",
+        "evidence": [
             {
-                "chunk_id": "a77d7cac-ca73-4d14-a372-62c9b9f322ce",
-                "snippet": "to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
+                "chunk_id": "None",
+                "snippet": "trade/device name on3d dolphin imaging"
             }
         ]
     },
     "technology_description": {
-        "value": "on3d is a standalone software that captures stores and present patient data in volumetric views to assist specialized dental practitioners for treatment and surgical planning and case",
+        "value": "trade/device name: on3d regulation name: medical image management and processing system open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist operation system windows windows or mac os same user interface mouse keyboard mouse keyboard same image rendering 2d and 3d 2d and 3d same image preview rotate enhance preview rotate enhance manipulation zoom brightness contrast zoom brightness contrast same sharpness sharpness basic image distance angle distance angle same measurement 3d airway analysis yes yes same cross sections in yes yes multiple planar same views mpv volume orientation yes yes same control volume stitching combine two separate volumes combine two separate volumes same into one into one volumetovolume yes yes same superimposition cephalometric none manual point picking and tracing and automatic structure templates difference analysis software provides predefined does not landmarks and tracing affect se structures can trace on 3d note 1 volume and 2d photo 3d/2d analysis provide both 3d and 2d provide both 3d and 2d analysis 3d analysis is analysis 3d analysis is difference performed on 3d volume 2d performed on 3d volume 2d does not affect se analysis is performed on a pre analysis is performed on 2d determined plane midsagittal photo or xray standard note 2 the subject device uses 3d image data only and does not use 2d photo or xray images",
         "evidence": [
             {
-                "chunk_id": "243565d9-c5a2-447a-ad3b-e386c13a8167",
-                "snippet": "on3d is a standalone software that captures stores and present patient data in volumetric views to assist specialized dental practitioners for treatment and surgical planning and case"
+                "chunk_id": "ccb3f14e-d428-4ff5-a3cc-866b1912e7bd",
+                "snippet": "trade/device name: on3d regulation name: medical image management and processing system"
+            },
+            {
+                "chunk_id": "ea4c9b1c-7469-4bae-ab4c-148c22856648",
+                "snippet": "open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist"
+            },
+            {
+                "chunk_id": "cd8b5fd0-2198-445d-b819-42b805ce69aa",
+                "snippet": "operation system windows windows or mac os same user interface mouse keyboard mouse keyboard same image rendering 2d and 3d 2d and 3d same image preview rotate enhance preview rotate enhance manipulation zoom brightness contrast zoom brightness contrast same sharpness sharpness basic image distance angle distance angle same measurement 3d airway analysis yes yes same cross sections in yes yes multiple planar same views mpv volume orientation yes yes same control volume stitching combine two separate volumes combine two separate volumes same into one into one volumetovolume yes yes same superimposition cephalometric none manual point picking and tracing and automatic structure templates difference analysis software provides predefined does not landmarks and tracing affect se structures can trace on 3d note 1 volume and 2d photo 3d/2d analysis provide both 3d and 2d provide both 3d and 2d analysis 3d analysis is analysis 3d analysis is difference performed on 3d volume 2d performed on 3d volume 2d does not affect se analysis is performed on a pre analysis is performed on 2d determined plane midsagittal photo or xray standard note 2"
+            },
+            {
+                "chunk_id": "8bd94251-08e4-40b7-9564-ab4129a84752",
+                "snippet": "the subject device uses 3d image data only and does not use 2d photo or xray images"
             }
         ]
     },
     "testing_summary": {
-        "value": "the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests the performance testing bench testing was performed as the software systemlevel test to assess the effectiveness of the device standalone software performance including each ui as open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist",
+        "value": "the safety and performance test results provide a reasonable assurance of safety and effectiveness. the performance testing bench testing was performed as the software systemlevel test to assess the effectiveness of the device standalone software performance including each ui as open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist. the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests.",
         "evidence": [
             {
-                "chunk_id": "4829eaa3-26b6-47f1-b606-d331a96f5171",
-                "snippet": "the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests"
+                "chunk_id": "41b52447-400d-4ffc-9d08-38d994cf507f",
+                "snippet": "treatment planning and simulation the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed recommended or suggested in the labeling of the device therefore we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device 5 / 5"
             },
             {
-                "chunk_id": "a0a009cc-c271-4ff7-b0ab-c2b472a8df44",
+                "chunk_id": "ea4c9b1c-7469-4bae-ab4c-148c22856648",
                 "snippet": "the performance testing bench testing was performed as the software systemlevel test to assess the effectiveness of the device standalone software performance including each ui as open the study in the worklist basic function for viewer button function hotkey function main function simulation environmental setting system setting worklist"
+            },
+            {
+                "chunk_id": "902bbe13-392e-4702-80c8-819226be594a",
+                "snippet": "the software verification and validation were performed to assess the effectiveness of the medical purpose software in accordance with iec 62304 standard requirements the testing was performed at the system level the integration level and the unit level tests"
             }
         ]
     },
     "substantial_equivalence_rationale": {
-        "value": "The device is substantially equivalent to legally marketed predicate devices marketed in interstate commerce prior to May 28, 1976, or to devices that have been reclassified in accordance with the provisions of the Federal Food, Drug, and Cosmetic Act that do not require approval of a premarket approval application (PMA).",
+        "value": "the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed recommended or suggested in the labeling of the device therefore we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device",
         "evidence": [
             {
-                "chunk_id": "e819da43-c786-4e6e-a122-1d2e7e4a062c",
-                "snippet": "have determined the device is substantially equivalent for the indications for use stated in the enclosure to legally marketed predicate devices marketed in interstate commerce prior to may 28 1976 the enactment date of the medical device amendments or to devices that have been reclassified in accordance with the provisions of the federal food drug and cosmetic act act that do not require approval of a premarket approval application pma"
+                "chunk_id": "41b52447-400d-4ffc-9d08-38d994cf507f",
+                "snippet": "treatment planning and simulation the safety and performance test results provide a reasonable assurance of safety and effectiveness with respect to the intended users and the conditions of use prescribed recommended or suggested in the labeling of the device therefore we believe that the subject device does not raise concerns in safety and effectiveness for the proposed intended use and that the subject device is substantially equivalent to the predicate device 5 / 5"
             }
         ]
     }
